@@ -1,0 +1,6 @@
+---
+hostname: 127.0.0.1
+port: '2222'
+username: vagrant
+ssh_key: C:/cygwin/home/Nagaraj/vagrant/wordpressdemo1/cookbooks/wordpress/.kitchen/kitchen-vagrant/kitchen-wordpress-default-centos-67/.vagrant/machines/default/virtualbox/private_key
+last_action: converge
