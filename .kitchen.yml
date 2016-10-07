@@ -1,4 +1,13 @@
-driver_plugin: vagrant
+---
+driver:
+  name: vagrant
+  customize:
+    memory: 3048
+  network:
+    - ["private_network", {ip: "10.10.13.21"}]
+  ssh:
+    insert_key: false
+
 
 provisioner:
   name: chef_zero
@@ -12,5 +21,5 @@ platforms:
 suites:
   - name: default
     run_list:
-      - recipe[wordpress]
+      - recipe[mywordpress]
     

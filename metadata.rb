@@ -1,4 +1,4 @@
-name              "wordpress"
+name              "mywordpress"
 maintainer        "reancloud"
 maintainer_email  "nagaraj.as@reancloud.com"
 license           "xxxxx"
