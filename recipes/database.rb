@@ -7,6 +7,7 @@ mysql2_chef_gem 'default' do
   action :install
 end
 
+# create mysql Database
   mysql_service 'wordpressdb' do
     port '3306'
     version '5.5'
@@ -15,7 +16,7 @@ end
   end
 
   socket = "/var/run/mysql-wordpressdb/mysqld.sock"
-
+# mysql details
   mysql_connection_info = {
     :host     => 'localhost',
     :username => 'root',
@@ -27,7 +28,7 @@ end
     connection  mysql_connection_info
     action      :create
   end
-
+#mysql db user details
   mysql_database_user 'wordpressuser' do
     connection    mysql_connection_info
     password      'password123'
@@ -36,6 +37,7 @@ end
     action        :create
   end
 
+#mysql db user permissions
   mysql_database_user 'wordpressuser' do
     connection    mysql_connection_info
     database_name 'wordpressdb'
