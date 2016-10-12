@@ -5,6 +5,10 @@ package 'php' do
   action :install
 end
 
+yum_package 'php-mysql' do
+  action :install
+end
+
 #restart apache
 service 'httpd' do
   action  :restart

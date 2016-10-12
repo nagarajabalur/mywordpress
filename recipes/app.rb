@@ -6,27 +6,33 @@ remote_file '/tmp/latest.tar.gz' do
   mode '0755'
 end
 
-#create the folder structure for wordpress
-directory '/var/www/wordpress' do
-  action :create
-  recursive true
-  owner 'apache'
-  group 'apache'
-  mode  '0755'
+#extract the downloaded tar file to /var/www/wordpress
+
+execute 'extract_some_tar' do
+  command 'tar xzvf latest.tar.gz'
+  cwd '/tmp'
+  only_if { File.exists?("/tmp/latest.tar.gz") }
 end
 
-#extract the downloaded tar file to /var/www/wordpress
-bash 'extract_module' do
-  cwd ::File.dirname('/tmp')
-  code <<-EOH
-    tar xzf '/tmp/latest.tar.gz' -C '/var/www/'
-    EOH
+
+execute 'copy the wordpress content' do
+  command 'cp -r /tmp/wordpress/* /var/www/html'
 end
 
 #added the mysql db config's to  wp-config.php file
-cookbook_file '/var/www/wordpress/wp-config.php' do
+cookbook_file '/var/www/html/wp-config.php' do
   source 'wp-config.php'
-  owner 'apache'
-  group 'apache'
-  mode '0755'
+  owner 'root'
+  group 'root'
+  mode '0644'
 end	
+
+package 'php-gd' do
+  retries 3
+  retry_delay 5
+  action :install
+end
+
+service 'httpd' do
+  action  :restart
+end

@@ -1,4 +1,3 @@
-
 mysql_client 'default' do
   action :create
 end
@@ -15,7 +14,13 @@ end
     action [:create, :start]
   end
 
-  socket = "/var/run/mysql-wordpressdb/mysqld.sock"
+socket = "/var/run/mysql-wordpressdb/mysqld.sock"
+
+link '/var/lib/mysql/mysql.sock' do
+      to socket
+      not_if 'test -f /var/lib/mysql/mysql.sock'
+    end
+
 # mysql details
   mysql_connection_info = {
     :host     => 'localhost',
