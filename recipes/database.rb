@@ -16,10 +16,11 @@ end
 
 socket = "/var/run/mysql-wordpressdb/mysqld.sock"
 
+#create a symlink for mysql.sock
 link '/var/lib/mysql/mysql.sock' do
-      to socket
-      not_if 'test -f /var/lib/mysql/mysql.sock'
-    end
+to socket
+not_if 'test -f /var/lib/mysql/mysql.sock'
+end
 
 # mysql details
   mysql_connection_info = {

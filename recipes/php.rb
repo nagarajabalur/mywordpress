@@ -5,6 +5,7 @@ package 'php' do
   action :install
 end
 
+#install php-mysql package
 yum_package 'php-mysql' do
   action :install
 end
