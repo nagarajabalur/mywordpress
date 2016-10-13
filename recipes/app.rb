@@ -1,5 +1,5 @@
 # download the latest wordpress tar file
-remote_file '/tmp/latest.tar.gz' do
+remote_file '/etc/latest.tar.gz' do
   source 'http://wordpress.org/latest.tar.gz'
   owner 'root'
   group 'root'
@@ -9,13 +9,13 @@ end
 # extract the downloaded tar file
 execute 'extract_some_tar' do
   command 'tar xzvf latest.tar.gz'
-  cwd '/tmp'
-  only_if { File.exist?('/tmp/latest.tar.gz') }
+  cwd '/etc'
+  only_if { File.exist?('/etc/latest.tar.gz') }
 end
 
 # copy the content of wordpress to /var/www/html
 execute 'copy the wordpress content' do
-  command 'cp -r /tmp/wordpress/* /var/www/html'
+  command 'cp -r /etc/wordpress/* /var/www/html'
 end
 
 # added the mysql db config's to  wp-config.php file
