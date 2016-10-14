@@ -1,3 +1,12 @@
+#
+# Cookbook Name:: mywordpress
+# Recipe:: php
+#
+# author: Nagaraj Abalur
+#
+# This recipe will install php packages which are required for wordpress application
+# 
+
 # install php package
 package 'php' do
   retries 3

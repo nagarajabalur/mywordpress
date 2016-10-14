@@ -4,13 +4,22 @@ This cookbook does not set up the WordPress blog. You will need to do this manua
 
 Platform
 --------
-* RHEL/CentOS 5, 6
+* centos 6.7
 
-Cookbooks
----------
-* mysql
-* mysql_chef_gem
-* php
-* apache2
-* openssl (uses library to generate secure passwords)
-* selinux (used to disable selinux for MySQL on RHEL-based systems)
+Chef
+--------------------
+Chef 12.1+
+
+
+Attribute Parameters
+--------------------
+
+#attributes for DB
+default['mywordpress']['db']['name'] -- mysql DB name
+default['mywordpress']['db']['user'] -- mysql DB user name
+default['mywordpress']['db']['root_password'] - Mysql DB root user password
+default['mywordpress']['db']['password'] - Mysql DB user password
+
+#attributes for wordpress 
+default['wordpress']['version'] - wordpress version to be installed on the node
+default['wordpress']['url'] - url to download wordpress tar ball
