@@ -33,9 +33,9 @@ execute 'copy the wordpress content' do
   not_if { File.exists?("/var/www/html/wordpress/index.php") }
 end
 
-# added the mysql db config's to  wp-config.php file
-cookbook_file '/var/www/html/wp-config.php' do
-  source 'wp-config.php'
+# added the mysql db config's to  wp-config.php template
+template '/var/www/html/wp-config.php' do
+  source 'wp-config.php.erb'
   owner 'apache'
   group 'apache'
   mode '0644'
