@@ -15,8 +15,8 @@ filepath = Chef::Config[:file_cache_path] + '/latest.tar.gz'
 
 remote_file filepath do
   source sourceurl
-  owner 'apache'
-  group 'apache'
+  owner 'root'
+  group 'root'
   mode '0755'
 end
 
@@ -36,8 +36,8 @@ end
 # added the mysql db config's to  wp-config.php template
 template '/var/www/html/wp-config.php' do
   source 'wp-config.php.erb'
-  owner 'apache'
-  group 'apache'
+  owner 'root'
+  group 'root'
   mode '0644'
 end
 

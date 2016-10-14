@@ -1,2 +1,7 @@
-I, [2016-10-14T13:34:37.075747 #5444]  INFO -- Kitchen: -----> Starting Kitchen (v1.13.2)
-I, [2016-10-14T13:34:38.415418 #5444]  INFO -- Kitchen: -----> Creating <default-centos-67>...
+I, [2016-10-14T16:26:55.995123 #5760]  INFO -- Kitchen: -----> Starting Kitchen (v1.13.2)
+D, [2016-10-14T16:26:56.016126 #5760] DEBUG -- Kitchen: [Vagrant command] BEGIN (vagrant --version)
+D, [2016-10-14T16:26:56.450681 #5760] DEBUG -- Kitchen: [Vagrant command] END (0m0.00s)
+I, [2016-10-14T16:26:57.960373 #5760]  INFO -- Kitchen: -----> Cleaning up any prior instances of <default-centos-67>
+I, [2016-10-14T16:26:57.961873 #5760]  INFO -- Kitchen: -----> Destroying <default-centos-67>...
+I, [2016-10-14T16:27:53.334905 #5760]  INFO -- Kitchen: -----> Testing <default-centos-67>
+I, [2016-10-14T16:27:53.335405 #5760]  INFO -- Kitchen: -----> Creating <default-centos-67>...
