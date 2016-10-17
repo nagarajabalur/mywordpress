@@ -7,19 +7,19 @@
 # This recipe will install php packages which are required for wordpress application
 # 
 
-# install php package
+# installing php package on the server
 package 'php' do
   retries 3
   retry_delay 5
   action :install
 end
 
-# install php-mysql package
-yum_package 'php-mysql' do
+# installling php-mysql package which is required to run mysql on the server
+package 'php-mysql' do
   action :install
 end
 
-# restart apache
+# restarting the httpd service after installing required php packges
 service 'httpd' do
   action :restart
 end

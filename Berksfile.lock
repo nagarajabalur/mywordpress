@@ -1,11 +1,11 @@
 DEPENDENCIES
-  mywordpress
-    path: .
-    metadata: true
+  database (>= 1.6.0)
+  mysql (>= 6.0.0)
+  mysql2_chef_gem (~> 1.0.1)
 
 GRAPH
-  apt (4.0.2)
-    compat_resource (>= 12.10)
+  apt (5.0.0)
+    compat_resource (>= 12.14.7)
   build-essential (7.0.1)
     compat_resource (>= 12.14)
     mingw (>= 1.1)
@@ -28,10 +28,6 @@ GRAPH
     build-essential (>= 0.0.0)
     mariadb (>= 0.0.0)
     mysql (~> 6.0)
-  mywordpress (1.0.0)
-    database (>= 1.6.0)
-    mysql (>= 6.0.0)
-    mysql2_chef_gem (~> 1.0.1)
   openssl (4.4.0)
     chef-sugar (>= 3.1.1)
   postgresql (4.0.6)
