@@ -30,7 +30,7 @@ Attributes
 Usage
 =====
 
-Add the "wordpress" recipe to your node's run list.
+Add the "mywordpress" recipe to your node's run list.
 
 License and Author
 ==================
