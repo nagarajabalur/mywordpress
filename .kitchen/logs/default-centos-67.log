@@ -259,3 +259,1223 @@ I, [2016-10-14T16:32:21.963016 #5760]  INFO -- default-centos-67: Removing insta
 I, [2016-10-14T16:32:24.212302 #5760]  INFO -- default-centos-67: Stopping VirtualBox Additions [FAILED]
 I, [2016-10-14T16:32:24.212302 #5760]  INFO -- default-centos-67: (Cannot unload module vboxguest)
 I, [2016-10-14T16:32:28.426837 #5760]  INFO -- default-centos-67: Removing existing VirtualBox non-DKMS kernel modules[  OK  ]
+I, [2016-10-14T16:33:35.624870 #5760]  INFO -- default-centos-67: Stopping VirtualBox Guest Addition service [  OK  ][  OK  ]
+I, [2016-10-14T16:33:38.116186 #5760]  INFO -- default-centos-67: Copying additional installer modules ...
+I, [2016-10-14T16:33:42.566251 #5760]  INFO -- default-centos-67: Installing additional modules ...
+I, [2016-10-14T16:33:43.679893 #5760]  INFO -- default-centos-67: Removing existing VirtualBox non-DKMS kernel modules[  OK  ]
+I, [2016-10-14T16:33:43.720398 #5760]  INFO -- default-centos-67: Building the VirtualBox Guest Additions kernel modules
+I, [2016-10-14T16:33:43.720398 #5760]  INFO -- default-centos-67: The headers for the current running kernel were not found. If the following
+I, [2016-10-14T16:33:43.720398 #5760]  INFO -- default-centos-67: module compilation fails then this could be the reason.
+I, [2016-10-14T16:33:43.720398 #5760]  INFO -- default-centos-67: The missing package can be probably installed with
+I, [2016-10-14T16:33:43.720398 #5760]  INFO -- default-centos-67: yum install kernel-devel-2.6.32-573.el6.x86_64
+I, [2016-10-14T16:33:43.720398 #5760]  INFO -- default-centos-67: 
+I, [2016-10-14T16:33:43.805409 #5760]  INFO -- default-centos-67: Building the main Guest Additions module[FAILED]
+I, [2016-10-14T16:33:43.805409 #5760]  INFO -- default-centos-67: (Look at /var/log/vboxadd-install.log to find out what went wrong)
+I, [2016-10-14T16:33:44.056941 #5760]  INFO -- default-centos-67: Doing non-kernel setup of the Guest Additions[  OK  ]
+I, [2016-10-14T16:33:44.579007 #5760]  INFO -- default-centos-67: Installing the Window System drivers
+I, [2016-10-14T16:33:44.579007 #5760]  INFO -- default-centos-67: Could not find the X.Org or XFree86 Window System, skipping.
+I, [2016-10-14T16:33:45.795161 #5760]  INFO -- default-centos-67: An error occurred during installation of VirtualBox Guest Additions 5.0.12. Some functionality may not work as intended.
+I, [2016-10-14T16:33:45.795161 #5760]  INFO -- default-centos-67: In most cases it is OK that the "Window System drivers" installation failed.
+I, [2016-10-14T16:33:46.171709 #5760]  INFO -- default-centos-67: 
+I, [2016-10-14T16:33:48.605018 #5760]  INFO -- default-centos-67: Restarting VM to apply changes...
+I, [2016-10-14T16:33:48.925559 #5760]  INFO -- default-centos-67: ==> default: Attempting graceful shutdown of VM...
+I, [2016-10-14T16:34:11.668947 #5760]  INFO -- default-centos-67: ==> default: Booting VM...
+I, [2016-10-14T16:34:18.460809 #5760]  INFO -- default-centos-67: ==> default: Waiting for machine to boot. This may take a few minutes...
+I, [2016-10-14T16:34:18.726843 #5760]  INFO -- default-centos-67:     default: SSH address: 127.0.0.1:2200
+I, [2016-10-14T16:34:18.726843 #5760]  INFO -- default-centos-67:     default: SSH username: vagrant
+I, [2016-10-14T16:34:18.726843 #5760]  INFO -- default-centos-67:     default: SSH auth method: private key
+I, [2016-10-14T16:34:52.474129 #5760]  INFO -- default-centos-67: ==> default: Machine booted and ready!
+I, [2016-10-14T16:34:52.474129 #5760]  INFO -- default-centos-67: ==> default: Checking for guest additions in VM...
+I, [2016-10-14T16:34:52.688156 #5760]  INFO -- default-centos-67:     default: No guest additions were detected on the base box for this VM! Guest
+I, [2016-10-14T16:34:52.688156 #5760]  INFO -- default-centos-67:     default: additions are required for forwarded ports, shared folders, host only
+I, [2016-10-14T16:34:52.688156 #5760]  INFO -- default-centos-67:     default: networking, and more. If SSH fails on this machine, please install
+I, [2016-10-14T16:34:52.688156 #5760]  INFO -- default-centos-67:     default: the guest additions and repackage the box to continue.
+I, [2016-10-14T16:34:52.688156 #5760]  INFO -- default-centos-67:     default: 
+I, [2016-10-14T16:34:52.688156 #5760]  INFO -- default-centos-67:     default: This is not an error message; everything may continue to work properly,
+I, [2016-10-14T16:34:52.688656 #5760]  INFO -- default-centos-67:     default: in which case you may ignore this message.
+I, [2016-10-14T16:34:52.688656 #5760]  INFO -- default-centos-67: ==> default: Setting hostname...
+I, [2016-10-14T16:34:58.270365 #5760]  INFO -- default-centos-67: ==> default: Configuring and enabling network interfaces...
+I, [2016-10-14T16:34:59.248489 #5760]  INFO -- default-centos-67: ==> default: Machine not provisioned because `--no-provision` is specified.
+D, [2016-10-14T16:34:59.476518 #5760] DEBUG -- default-centos-67: [Vagrant command] END (0m0.00s)
+D, [2016-10-14T16:34:59.478518 #5760] DEBUG -- default-centos-67: [Vagrant command] BEGIN (vagrant ssh-config)
+D, [2016-10-14T16:35:21.864361 #5760] DEBUG -- default-centos-67: [Vagrant command] END (0m0.00s)
+D, [2016-10-14T16:35:21.864861 #5760] DEBUG -- default-centos-67: [SSH] reusing existing connection vagrant@127.0.0.1<{:user_known_hosts_file=>"/dev/null", :paranoid=>false, :port=>"2200", :compression=>false, :compression_level=>0, :keepalive=>true, :keepalive_interval=>60, :timeout=>15, :keys_only=>true, :keys=>["C:/cygwin/home/Nagaraj/vagrant/wordpressdemo1/cookbooks/mywordpress/.kitchen/kitchen-vagrant/kitchen-mywordpress-default-centos-67/.vagrant/machines/default/virtualbox/private_key"], :auth_methods=>["publickey"]}>
+D, [2016-10-14T16:35:21.865861 #5760] DEBUG -- default-centos-67: [SSH] opening connection to vagrant@127.0.0.1<{:user_known_hosts_file=>"/dev/null", :paranoid=>false, :port=>"2200", :compression=>false, :compression_level=>0, :keepalive=>true, :keepalive_interval=>60, :timeout=>15, :keys_only=>true, :keys=>["C:/cygwin/home/Nagaraj/vagrant/wordpressdemo1/cookbooks/mywordpress/.kitchen/kitchen-vagrant/kitchen-mywordpress-default-centos-67/.vagrant/machines/default/virtualbox/private_key"], :auth_methods=>["publickey"]}>
+D, [2016-10-14T16:35:26.724478 #5760] DEBUG -- default-centos-67: [SSH] vagrant@127.0.0.1<{:user_known_hosts_file=>"/dev/null", :paranoid=>false, :port=>"2200", :compression=>false, :compression_level=>0, :keepalive=>true, :keepalive_interval=>60, :timeout=>15, :keys_only=>true, :keys=>["C:/cygwin/home/Nagaraj/vagrant/wordpressdemo1/cookbooks/mywordpress/.kitchen/kitchen-vagrant/kitchen-mywordpress-default-centos-67/.vagrant/machines/default/virtualbox/private_key"], :auth_methods=>["publickey"], :user=>"vagrant"}> (echo '[SSH] Established')
+I, [2016-10-14T16:35:27.037018 #5760]  INFO -- default-centos-67: [SSH] Established
+I, [2016-10-14T16:35:27.039018 #5760]  INFO -- default-centos-67: Vagrant instance <default-centos-67> created.
+I, [2016-10-14T16:35:27.044519 #5760]  INFO -- default-centos-67: Finished creating <default-centos-67> (7m33.70s).
+I, [2016-10-14T16:35:27.045019 #5760]  INFO -- default-centos-67: -----> Converging <default-centos-67>...
+I, [2016-10-14T16:35:27.047019 #5760]  INFO -- default-centos-67: Preparing files for transfer
+D, [2016-10-14T16:35:27.047519 #5760] DEBUG -- default-centos-67: Creating local sandbox in C:/Users/Nagaraj/AppData/Local/Temp/default-centos-67-sandbox-20161014-5760-vro80f
+I, [2016-10-14T16:35:27.048019 #5760]  INFO -- default-centos-67: Preparing dna.json
+D, [2016-10-14T16:35:27.048519 #5760] DEBUG -- default-centos-67: Creating dna.json from {:run_list=>["recipe[mywordpress]"]}
+I, [2016-10-14T16:35:27.052520 #5760]  INFO -- default-centos-67: Resolving cookbook dependencies with Berkshelf 5.1.0...
+D, [2016-10-14T16:35:27.054020 #5760] DEBUG -- default-centos-67: Using Berksfile from C:/cygwin/home/Nagaraj/vagrant/wordpressdemo1/cookbooks/mywordpress/Berksfile
+I, [2016-10-14T16:35:40.498727 #5760]  INFO -- default-centos-67: Removing non-cookbook files before transfer
+I, [2016-10-14T16:35:41.043796 #5760]  INFO -- default-centos-67: Preparing validation.pem
+D, [2016-10-14T16:35:41.044296 #5760] DEBUG -- default-centos-67: Using a dummy validation.pem
+I, [2016-10-14T16:35:41.066299 #5760]  INFO -- default-centos-67: Preparing client.rb
+D, [2016-10-14T16:35:41.066799 #5760] DEBUG -- default-centos-67: Creating client.rb from {:node_name=>"default-centos-67", :checksum_path=>"/tmp/kitchen/checksums", :file_cache_path=>"/tmp/kitchen/cache", :file_backup_path=>"/tmp/kitchen/backup", :cookbook_path=>["/tmp/kitchen/cookbooks", "/tmp/kitchen/site-cookbooks"], :data_bag_path=>"/tmp/kitchen/data_bags", :environment_path=>"/tmp/kitchen/environments", :node_path=>"/tmp/kitchen/nodes", :role_path=>"/tmp/kitchen/roles", :client_path=>"/tmp/kitchen/clients", :user_path=>"/tmp/kitchen/users", :validation_key=>"/tmp/kitchen/validation.pem", :client_key=>"/tmp/kitchen/client.pem", :chef_server_url=>"http://127.0.0.1:8889", :encrypted_data_bag_secret=>"/tmp/kitchen/encrypted_data_bag_secret", :named_run_list=>{}}
+D, [2016-10-14T16:35:41.072300 #5760] DEBUG -- default-centos-67: [SSH] reusing existing connection vagrant@127.0.0.1<{:user_known_hosts_file=>"/dev/null", :paranoid=>false, :port=>"2200", :compression=>false, :compression_level=>0, :keepalive=>true, :keepalive_interval=>60, :timeout=>15, :keys_only=>true, :keys=>["C:/cygwin/home/Nagaraj/vagrant/wordpressdemo1/cookbooks/mywordpress/.kitchen/kitchen-vagrant/kitchen-mywordpress-default-centos-67/.vagrant/machines/default/virtualbox/private_key"], :auth_methods=>["publickey"], :user=>"vagrant"}>
+D, [2016-10-14T16:35:41.098803 #5760] DEBUG -- default-centos-67: [SSH] vagrant@127.0.0.1<{:user_known_hosts_file=>"/dev/null", :paranoid=>false, :port=>"2200", :compression=>false, :compression_level=>0, :keepalive=>true, :keepalive_interval=>60, :timeout=>15, :keys_only=>true, :keys=>["C:/cygwin/home/Nagaraj/vagrant/wordpressdemo1/cookbooks/mywordpress/.kitchen/kitchen-vagrant/kitchen-mywordpress-default-centos-67/.vagrant/machines/default/virtualbox/private_key"], :auth_methods=>["publickey"], :user=>"vagrant"}> (sudo -E sh -c '
+
+chef_omnibus_root="/opt/chef"
+chef_omnibus_url="https://omnitruck.chef.io/install.sh"
+install_flags=""
+pretty_version="install only if missing"
+sudo_sh="sudo -E sh"
+version="true"
+
+tmp_stderr="/tmp/stderr";
+
+# capture_tmp_stderr SOURCE
+capture_tmp_stderr() {
+  # spool up $tmp_stderr from all the commands we called
+  if test -f "$tmp_stderr"; then
+    output="`cat $tmp_stderr`";
+    stderr_results="${stderr_results}\nSTDERR from $1:\n\n${output}\n";
+    rm $tmp_stderr;
+  fi
+}
+
+# do_curl URL FILENAME
+do_curl() {
+  echo "Trying curl...";
+  curl -sL -D "$tmp_stderr" "$1" > "$2";
+  ec=$?;
+  # check for 404
+  grep "404 Not Found" "$tmp_stderr" 2>&1 >/dev/null;
+  if test $? -eq 0; then
+    http_404_error "$1";
+  fi
+
+  # check for bad return status or empty output
+  if test $ec -ne 0 || test ! -s "$2"; then
+    capture_tmp_stderr "curl";
+    return 1;
+  else
+    echo "Download complete.";
+    return 0;
+  fi
+}
+
+# do_download URL FILENAME
+do_download() {
+  echo "Downloading ${1} to file ${2}";
+
+  exists wget;
+  if test $? -eq 0; then
+    do_wget "$1" "$2" && return 0;
+  fi
+
+  exists curl;
+  if test $? -eq 0; then
+    do_curl "$1" "$2" && return 0;
+  fi
+
+  exists fetch;
+  if test $? -eq 0; then
+    do_fetch "$1" "$2" && return 0;
+  fi
+
+  exists python;
+  if test $? -eq 0; then
+    do_python "$1" "$2" && return 0;
+  fi
+
+  exists perl;
+  if test $? -eq 0; then
+    do_perl "$1" "$2" && return 0;
+  fi
+
+  unable_to_download "$1" "$2";
+}
+
+# do_fetch URL FILENAME
+do_fetch() {
+  echo "Trying fetch...";
+  fetch -o "$2" "$1" 2>"$tmp_stderr";
+  ec=$?;
+  # check for 404
+  grep "Not Found" "$tmp_stderr" 2>&1 >/dev/null;
+  if test $? -eq 0; then
+    http_404_error "$1";
+  fi
+
+  # check for bad return status or empty output
+  if test $ec -ne 0 || test ! -s "$2"; then
+    capture_tmp_stderr "fetch";
+    return 1;
+  else
+    echo "Download complete.";
+    return 0;
+  fi
+}
+
+# do_perl URL FILENAME
+do_perl() {
+  echo "Trying perl...";
+  perl -e "use LWP::Simple; getprint(\$ARGV[0]);" "$1" > "$2" 2>"$tmp_stderr";
+  ec=$?;
+  # check for 404
+  grep "404 Not Found" "$tmp_stderr" 2>&1 >/dev/null;
+  if test $? -eq 0; then
+    http_404_error "$1";
+  fi
+
+  # check for bad return status or empty output
+  if test $ec -ne 0 || test ! -s "$2"; then
+    capture_tmp_stderr "perl";
+    return 1;
+  else
+    echo "Download complete.";
+    return 0;
+  fi
+}
+
+# do_python URL FILENAME
+do_python() {
+  echo "Trying python...";
+  python -c "import sys,urllib2 ; sys.stdout.write(urllib2.urlopen(sys.argv[1]).read())" "$1" > "$2" 2>"$tmp_stderr";
+  ec=$?;
+  # check for 404
+  grep "HTTP Error 404" "$tmp_stderr" 2>&1 >/dev/null;
+  if test $? -eq 0; then
+    http_404_error "$1";
+  fi
+
+  # check for bad return status or empty output
+  if test $ec -ne 0 || test ! -s "$2"; then
+    capture_tmp_stderr "python";
+    return 1;
+  else
+    echo "Download complete.";
+    return 0;
+  fi
+}
+
+# do_wget URL FILENAME
+do_wget() {
+  echo "Trying wget...";
+  wget -O "$2" "$1" 2>"$tmp_stderr";
+  ec=$?;
+  # check for 404
+  grep "ERROR 404" "$tmp_stderr" 2>&1 >/dev/null;
+  if test $? -eq 0; then
+    http_404_error "$1";
+  fi
+
+  # check for bad return status or empty output
+  if test $ec -ne 0 || test ! -s "$2"; then
+    capture_tmp_stderr "wget";
+    return 1;
+  else
+    echo "Download complete.";
+    return 0;
+  fi
+}
+
+# exists COMMAND
+exists() {
+  if command -v "$1" >/dev/null 2>&1; then
+    return 0;
+  else
+    return 1;
+  fi
+}
+
+# http_404_error URL
+http_404_error() {
+  echo ">>>>>> Downloading ${1} resulted in an HTTP/404, aborting";
+  exit 40;
+}
+
+# should_update_chef ROOT VERSION
+should_update_chef() {
+  if test ! -d "$1"; then
+    return 0;
+  elif test "$2" = "true"; then
+    return 1;
+  elif test "$2" = "latest"; then
+    return 0;
+  fi
+
+  if test -f "${1}/version-manifest.txt"; then
+    chef_version="`head -n 1 ${1}/version-manifest.txt | cut -d \" \" -f 2`";
+  else
+    chef_version="`${1}/bin/chef-solo -v | cut -d \" \" -f 2`";
+  fi
+
+  echo "$chef_version" | grep "^${2}" 2>&1 >/dev/null;
+  if test $? -eq 0; then
+    return 1;
+  else
+    echo "${2}" | grep "^$chef_version" 2>&1 >/dev/null;
+    if test $? -eq 0; then
+      return 1;
+    else
+      return 0;
+    fi
+  fi
+}
+
+# unable_to_download URL FILE
+unable_to_download() {
+  echo "Unable to download $1 to $2, aborting";
+
+  if test "x${stderr_results}" != "x"; then
+    echo "\nDEBUG OUTPUT FOLLOWS:\n${stderr_results}";
+  fi
+
+  exit 10;
+}
+
+# main
+main() {
+  should_update_chef "$chef_omnibus_root" "$version"
+  if test $? -eq 0; then
+    echo "-----> Installing Chef Omnibus (${pretty_version})";
+
+    # solaris 10 lacks recent enough credentials, so http url is used
+    platform="`/usr/bin/uname -s 2>/dev/null`";
+    platform_version="`/usr/bin/uname -r 2>/dev/null`";
+    if test "x${platform}" = "xSunOS" && test "x${platform_version}" = "x5.10"; then
+      chef_omnibus_url=`echo "$chef_omnibus_url" | sed -e "s/https/http/"`;
+    fi
+
+    do_download "$chef_omnibus_url" /tmp/install.sh;
+    $sudo_sh /tmp/install.sh $install_flags;
+  else
+    echo "-----> Chef Omnibus installation detected (${pretty_version})";
+  fi
+}
+
+# augment path in an attempt to find a download program
+PATH="${PATH}:/opt/local/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/sfw/bin";
+export PATH;
+
+main
+')
+I, [2016-10-14T16:35:41.209817 #5760]  INFO -- default-centos-67: -----> Installing Chef Omnibus (install only if missing)
+I, [2016-10-14T16:35:41.210817 #5760]  INFO -- default-centos-67: Downloading https://omnitruck.chef.io/install.sh to file /tmp/install.sh
+I, [2016-10-14T16:35:41.210817 #5760]  INFO -- default-centos-67: Trying wget...
+I, [2016-10-14T16:35:41.762888 #5760]  INFO -- default-centos-67: Download complete.
+I, [2016-10-14T16:35:41.823395 #5760]  INFO -- default-centos-67: el 6 x86_64
+I, [2016-10-14T16:35:41.823395 #5760]  INFO -- default-centos-67: Getting information for chef stable  for el...
+I, [2016-10-14T16:35:41.823395 #5760]  INFO -- default-centos-67: downloading https://omnitruck.chef.io/stable/chef/metadata?v=&p=el&pv=6&m=x86_64
+I, [2016-10-14T16:35:41.823895 #5760]  INFO -- default-centos-67:   to file /tmp/install.sh.2096/metadata.txt
+I, [2016-10-14T16:35:41.827896 #5760]  INFO -- default-centos-67: trying wget...
+I, [2016-10-14T16:35:43.002045 #5760]  INFO -- default-centos-67: sha1	a32f93a6ef398d8da39394294cb17ff406f7bf6a
+I, [2016-10-14T16:35:43.002045 #5760]  INFO -- default-centos-67: sha256	10407373c4bd03362b960366696d1072d725319b7e10e82c08829ad87ad4eec8
+I, [2016-10-14T16:35:43.002545 #5760]  INFO -- default-centos-67: url	https://packages.chef.io/files/stable/chef/12.15.19/el/6/chef-12.15.19-1.el6.x86_64.rpm
+I, [2016-10-14T16:35:43.002545 #5760]  INFO -- default-centos-67: version	12.15.19
+I, [2016-10-14T16:35:43.007046 #5760]  INFO -- default-centos-67: downloaded metadata file looks valid...
+I, [2016-10-14T16:35:43.028048 #5760]  INFO -- default-centos-67: downloading https://packages.chef.io/files/stable/chef/12.15.19/el/6/chef-12.15.19-1.el6.x86_64.rpm
+I, [2016-10-14T16:35:43.028548 #5760]  INFO -- default-centos-67:   to file /tmp/install.sh.2096/chef-12.15.19-1.el6.x86_64.rpm
+I, [2016-10-14T16:35:43.030548 #5760]  INFO -- default-centos-67: trying wget...
+I, [2016-10-14T16:36:37.561973 #5760]  INFO -- default-centos-67: Comparing checksum with sha256sum...
+I, [2016-10-14T16:36:37.912518 #5760]  INFO -- default-centos-67: 
+I, [2016-10-14T16:36:37.912518 #5760]  INFO -- default-centos-67: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2016-10-14T16:36:37.912518 #5760]  INFO -- default-centos-67: 
+I, [2016-10-14T16:36:37.913018 #5760]  INFO -- default-centos-67: You are installing an omnibus package without a version pin.  If you are installing
+I, [2016-10-14T16:36:37.913018 #5760]  INFO -- default-centos-67: on production servers via an automated process this is DANGEROUS and you will
+I, [2016-10-14T16:36:37.913018 #5760]  INFO -- default-centos-67: be upgraded without warning on new releases, even to new major releases.
+I, [2016-10-14T16:36:37.913018 #5760]  INFO -- default-centos-67: Letting the version float is only appropriate in desktop, test, development or
+I, [2016-10-14T16:36:37.913018 #5760]  INFO -- default-centos-67: CI/CD environments.
+I, [2016-10-14T16:36:37.913018 #5760]  INFO -- default-centos-67: 
+I, [2016-10-14T16:36:37.913018 #5760]  INFO -- default-centos-67: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2016-10-14T16:36:37.913018 #5760]  INFO -- default-centos-67: 
+I, [2016-10-14T16:36:37.913018 #5760]  INFO -- default-centos-67: Installing chef 
+I, [2016-10-14T16:36:37.913518 #5760]  INFO -- default-centos-67: installing with rpm...
+I, [2016-10-14T16:36:39.439712 #5760]  INFO -- default-centos-67: warning: /tmp/install.sh.2096/chef-12.15.19-1.el6.x86_64.rpm: Header V4 DSA/SHA1 Signature, key ID 83ef826a: NOKEY
+I, [2016-10-14T16:36:42.591112 #5760]  INFO -- default-centos-67: Preparing...                                                            (100%)#                                           (100%)##                                          (100%)###                                         (100%)####                                        (100%)#####                                       (100%)######                                      (100%)#######                                     (100%)########                                    (100%)#########                                   (100%)##########                                  (100%)###########                                 (100%)############                                (100%)#############                               (100%)##############                              (100%)###############                             (100%)################                            (100%)#################                           (100%)##################                          (100%)###################                         (100%)####################                        (100%)#####################                       (100%)######################                      (100%)#######################                     (100%)########################                    (100%)#########################                   (100%)##########################                  (100%)###########################                 (100%)############################                (100%)#############################               (100%)##############################              (100%)###############################             (100%)################################            (100%)#################################           (100%)##################################          (100%)###################################         (100%)####################################        (100%)#####################################       (100%)######################################      (100%)#######################################     (100%)########################################    (100%)#########################################   (100%)##########################################  (100%)########################################### (100%)########################################### [100%]
+I, [2016-10-14T16:36:50.197578 #5760]  INFO -- default-centos-67:    1:chef                                                               (  1%)#                                           (  3%)##                                          (  6%)###                                         (  8%)####                                        ( 10%)#####                                       ( 13%)######                                      ( 15%)#######                                     ( 17%)########                                    ( 19%)#########                                   ( 22%)##########                                  ( 24%)###########                                 ( 26%)############                                ( 28%)#############                               ( 31%)##############                              ( 33%)###############                             ( 35%)################                            ( 38%)#################                           ( 40%)##################                          ( 42%)###################                         ( 44%)####################                        ( 47%)#####################                       ( 49%)######################                      ( 51%)#######################                     ( 53%)########################                    ( 56%)#########################                   ( 58%)##########################                  ( 60%)###########################                 ( 63%)############################                ( 65%)#############################               ( 67%)##############################              ( 69%)###############################             ( 72%)################################            ( 74%)#################################           ( 76%)##################################          ( 78%)###################################         ( 81%)####################################        ( 83%)#####################################       ( 85%)######################################      ( 88%)#######################################     ( 90%)########################################    ( 92%)#########################################   ( 94%)##########################################  ( 97%)########################################### ( 99%)########################################### [100%]
+I, [2016-10-14T16:36:55.950308 #5760]  INFO -- default-centos-67: Thank you for installing Chef!
+D, [2016-10-14T16:36:56.036819 #5760] DEBUG -- default-centos-67: [SSH] vagrant@127.0.0.1<{:user_known_hosts_file=>"/dev/null", :paranoid=>false, :port=>"2200", :compression=>false, :compression_level=>0, :keepalive=>true, :keepalive_interval=>60, :timeout=>15, :keys_only=>true, :keys=>["C:/cygwin/home/Nagaraj/vagrant/wordpressdemo1/cookbooks/mywordpress/.kitchen/kitchen-vagrant/kitchen-mywordpress-default-centos-67/.vagrant/machines/default/virtualbox/private_key"], :auth_methods=>["publickey"], :user=>"vagrant"}> (sh -c '
+TEST_KITCHEN="1"; export TEST_KITCHEN
+sudo_rm="sudo -E rm"
+dirs="/tmp/kitchen/clients /tmp/kitchen/cookbooks /tmp/kitchen/data /tmp/kitchen/data_bags /tmp/kitchen/encrypted_data_bag_secret /tmp/kitchen/environments /tmp/kitchen/roles"
+root_path="/tmp/kitchen"
+
+$sudo_rm -rf $dirs
+mkdir -p $root_path
+')
+I, [2016-10-14T16:36:56.089826 #5760]  INFO -- default-centos-67: Transferring files to <default-centos-67>
+D, [2016-10-14T16:36:56.091326 #5760] DEBUG -- default-centos-67: TIMING: scp async upload (Kitchen::Transport::Ssh)
+D, [2016-10-14T16:37:08.268372 #5760] DEBUG -- default-centos-67: TIMING: scp async upload (Kitchen::Transport::Ssh) took (0m12.18s)
+D, [2016-10-14T16:37:08.270873 #5760] DEBUG -- default-centos-67: Transfer complete
+D, [2016-10-14T16:37:08.272373 #5760] DEBUG -- default-centos-67: Attempting to execute command - try 1 of 1.
+D, [2016-10-14T16:37:08.273373 #5760] DEBUG -- default-centos-67: [SSH] vagrant@127.0.0.1<{:user_known_hosts_file=>"/dev/null", :paranoid=>false, :port=>"2200", :compression=>false, :compression_level=>0, :keepalive=>true, :keepalive_interval=>60, :timeout=>15, :keys_only=>true, :keys=>["C:/cygwin/home/Nagaraj/vagrant/wordpressdemo1/cookbooks/mywordpress/.kitchen/kitchen-vagrant/kitchen-mywordpress-default-centos-67/.vagrant/machines/default/virtualbox/private_key"], :auth_methods=>["publickey"], :user=>"vagrant"}> (sh -c '
+TEST_KITCHEN="1"; export TEST_KITCHEN
+sudo -E /opt/chef/bin/chef-client --local-mode --config /tmp/kitchen/client.rb --log_level auto --force-formatter --no-color --json-attributes /tmp/kitchen/dna.json --chef-zero-port 8889 
+')
+I, [2016-10-14T16:37:09.717056 #5760]  INFO -- default-centos-67: Starting Chef Client, version 12.15.19
+I, [2016-10-14T16:37:13.776572 #5760]  INFO -- default-centos-67: Creating a new client identity for default-centos-67 using the validator key.
+I, [2016-10-14T16:37:13.878085 #5760]  INFO -- default-centos-67: resolving cookbooks for run list: ["mywordpress"]
+I, [2016-10-14T16:37:14.539169 #5760]  INFO -- default-centos-67: Synchronizing Cookbooks:
+I, [2016-10-14T16:37:14.579674 #5760]  INFO -- default-centos-67:   - mywordpress (1.0.0)
+I, [2016-10-14T16:37:14.620179 #5760]  INFO -- default-centos-67:   - database (6.0.0)
+I, [2016-10-14T16:37:14.650683 #5760]  INFO -- default-centos-67:   - mysql (6.1.3)
+I, [2016-10-14T16:37:14.681687 #5760]  INFO -- default-centos-67:   - mysql2_chef_gem (1.0.2)
+I, [2016-10-14T16:37:14.722192 #5760]  INFO -- default-centos-67:   - postgresql (4.0.6)
+I, [2016-10-14T16:37:14.732693 #5760]  INFO -- default-centos-67:   - yum-mysql-community (1.0.0)
+I, [2016-10-14T16:37:14.753196 #5760]  INFO -- default-centos-67:   - smf (2.2.8)
+I, [2016-10-14T16:37:14.774699 #5760]  INFO -- default-centos-67:   - build-essential (7.0.1)
+I, [2016-10-14T16:37:14.825205 #5760]  INFO -- default-centos-67:   - mariadb (0.3.1)
+I, [2016-10-14T16:37:14.858209 #5760]  INFO -- default-centos-67:   - apt (4.0.2)
+I, [2016-10-14T16:37:14.879212 #5760]  INFO -- default-centos-67:   - openssl (4.4.0)
+I, [2016-10-14T16:37:14.903715 #5760]  INFO -- default-centos-67:   - yum (4.0.0)
+I, [2016-10-14T16:37:14.914716 #5760]  INFO -- default-centos-67:   - rbac (1.0.3)
+I, [2016-10-14T16:37:14.939219 #5760]  INFO -- default-centos-67:   - seven_zip (2.0.2)
+I, [2016-10-14T16:37:14.980725 #5760]  INFO -- default-centos-67:   - mingw (1.2.4)
+I, [2016-10-14T16:37:15.051734 #5760]  INFO -- default-centos-67:   - compat_resource (12.14.7)
+I, [2016-10-14T16:37:15.062735 #5760]  INFO -- default-centos-67:   - chef-sugar (3.4.0)
+I, [2016-10-14T16:37:15.074237 #5760]  INFO -- default-centos-67:   - yum-epel (1.0.1)
+I, [2016-10-14T16:37:15.115242 #5760]  INFO -- default-centos-67:   - windows (2.0.2)
+I, [2016-10-14T16:37:15.115242 #5760]  INFO -- default-centos-67: Installing Cookbook Gems:
+I, [2016-10-14T16:37:15.115742 #5760]  INFO -- default-centos-67: Compiling Cookbooks...
+I, [2016-10-14T16:37:15.208254 #5760]  INFO -- default-centos-67: [2016-10-14T11:07:13+00:00] WARN: Chef::Provider::AptRepository already exists!  Cannot create deprecation class for LWRP provider apt_repository from cookbook apt
+I, [2016-10-14T16:37:15.219255 #5760]  INFO -- default-centos-67: [2016-10-14T11:07:13+00:00] WARN: AptRepository already exists!  Deprecation class overwrites Custom resource apt_repository from cookbook apt
+I, [2016-10-14T16:37:15.304766 #5760]  INFO -- default-centos-67: [2016-10-14T11:07:13+00:00] WARN: Chef::Provider::YumRepository already exists!  Cannot create deprecation class for LWRP provider yum_repository from cookbook yum
+I, [2016-10-14T16:37:15.335770 #5760]  INFO -- default-centos-67: [2016-10-14T11:07:13+00:00] WARN: YumRepository already exists!  Deprecation class overwrites Custom resource yum_repository from cookbook yum
+I, [2016-10-14T16:37:15.347271 #5760]  INFO -- default-centos-67: Converging 18 resources
+I, [2016-10-14T16:37:15.347771 #5760]  INFO -- default-centos-67: Recipe: mywordpress::apache
+I, [2016-10-14T16:37:35.687354 #5760]  INFO -- default-centos-67:   * yum_package[httpd] action install
+I, [2016-10-14T16:37:35.687854 #5760]  INFO -- default-centos-67:     - install version 2.2.15-54.el6.centos of package httpd
+I, [2016-10-14T16:37:35.908382 #5760]  INFO -- default-centos-67:   * service[httpd] action enable
+I, [2016-10-14T16:37:35.908382 #5760]  INFO -- default-centos-67:     - enable service service[httpd]
+I, [2016-10-14T16:37:36.089405 #5760]  INFO -- default-centos-67:   * service[httpd] action start
+I, [2016-10-14T16:37:36.089405 #5760]  INFO -- default-centos-67:     - start service service[httpd]
+I, [2016-10-14T16:37:36.089405 #5760]  INFO -- default-centos-67: Recipe: mywordpress::database
+I, [2016-10-14T16:37:36.110908 #5760]  INFO -- default-centos-67:   * mysql_client[default] action create
+I, [2016-10-14T16:37:41.709619 #5760]  INFO -- default-centos-67:     * yum_package[default :create mysql] action install
+I, [2016-10-14T16:37:41.709619 #5760]  INFO -- default-centos-67:       - install version 5.1.73-7.el6 of package mysql
+I, [2016-10-14T16:37:55.650389 #5760]  INFO -- default-centos-67:     * yum_package[default :create mysql-devel] action install
+I, [2016-10-14T16:37:55.650389 #5760]  INFO -- default-centos-67:       - install version 5.1.73-7.el6 of package mysql-devel
+I, [2016-10-14T16:37:55.650389 #5760]  INFO -- default-centos-67:   
+I, [2016-10-14T16:37:55.652389 #5760]  INFO -- default-centos-67:   * mysql2_chef_gem[default] action install
+I, [2016-10-14T16:37:55.652889 #5760]  INFO -- default-centos-67:   Recipe: build-essential::default
+I, [2016-10-14T16:37:55.664391 #5760]  INFO -- default-centos-67:     * build_essential[install_packages] action install
+I, [2016-10-14T16:38:41.589223 #5760]  INFO -- default-centos-67:       * yum_package[autoconf, bison, flex, gcc, gcc-c++, gettext, kernel-devel, make, m4, ncurses-devel, patch] action install
+I, [2016-10-14T16:38:41.589723 #5760]  INFO -- default-centos-67:  - install version 2.63-5.1.el6 of package autoconf
+I, [2016-10-14T16:38:41.589723 #5760]  INFO -- default-centos-67:  - install version 2.4.1-5.el6 of package bison
+I, [2016-10-14T16:38:41.592223 #5760]  INFO -- default-centos-67:  - install version 2.5.35-9.el6 of package flex
+I, [2016-10-14T16:38:41.592223 #5760]  INFO -- default-centos-67:  - install version 4.4.7-17.el6 of package gcc-c++
+I, [2016-10-14T16:38:41.592223 #5760]  INFO -- default-centos-67:  - install version 0.17-18.el6 of package gettext
+I, [2016-10-14T16:38:41.592223 #5760]  INFO -- default-centos-67:  - install version 2.6.32-642.6.1.el6 of package kernel-devel
+I, [2016-10-14T16:38:41.592723 #5760]  INFO -- default-centos-67:  - install version 5.7-4.20090207.el6 of package ncurses-devel
+I, [2016-10-14T16:38:41.592723 #5760]  INFO -- default-centos-67:  - install version 2.6-6.el6 of package patch
+I, [2016-10-14T16:38:41.592723 #5760]  INFO -- default-centos-67:     
+I, [2016-10-14T16:38:41.633728 #5760]  INFO -- default-centos-67:     * mysql_client[default] action create
+I, [2016-10-14T16:38:45.735749 #5760]  INFO -- default-centos-67:       * yum_package[default :create mysql] action install (up to date)
+I, [2016-10-14T16:38:45.736749 #5760]  INFO -- default-centos-67:       * yum_package[default :create mysql-devel] action install (up to date)
+I, [2016-10-14T16:38:45.737249 #5760]  INFO -- default-centos-67: (up to date)
+I, [2016-10-14T16:38:57.788780 #5760]  INFO -- default-centos-67:     * gem_package[mysql2] action install
+I, [2016-10-14T16:38:57.788780 #5760]  INFO -- default-centos-67:       - install version 0.3.17 of package mysql2
+I, [2016-10-14T16:38:57.789280 #5760]  INFO -- default-centos-67:   
+I, [2016-10-14T16:38:57.789780 #5760]  INFO -- default-centos-67: Recipe: mywordpress::database
+I, [2016-10-14T16:38:57.871790 #5760]  INFO -- default-centos-67:   * mysql_service[wordpressdb] action create
+I, [2016-10-14T16:38:57.872290 #5760]  INFO -- default-centos-67:   Recipe: yum-mysql-community::mysql55
+I, [2016-10-14T16:38:57.873790 #5760]  INFO -- default-centos-67:     * yum_repository[mysql55-community] action create
+I, [2016-10-14T16:38:57.914796 #5760]  INFO -- default-centos-67:       * template[/etc/yum.repos.d/mysql55-community.repo] action create
+I, [2016-10-14T16:38:57.937799 #5760]  INFO -- default-centos-67:  - create new file /etc/yum.repos.d/mysql55-community.repo
+I, [2016-10-14T16:38:57.938299 #5760]  INFO -- default-centos-67:  - update content in file /etc/yum.repos.d/mysql55-community.repo from none to d4b671
+I, [2016-10-14T16:38:57.938799 #5760]  INFO -- default-centos-67:  --- /etc/yum.repos.d/mysql55-community.repo	2016-10-14 11:08:56.244999853 +0000
+I, [2016-10-14T16:38:57.938799 #5760]  INFO -- default-centos-67:  +++ /etc/yum.repos.d/.chef-mysql55-community20161014-2212-ch58yi.repo	2016-10-14 11:08:56.243999854 +0000
+I, [2016-10-14T16:38:57.938799 #5760]  INFO -- default-centos-67:  @@ -1 +1,11 @@
+I, [2016-10-14T16:38:57.939299 #5760]  INFO -- default-centos-67:  +# This file was generated by Chef
+I, [2016-10-14T16:38:57.939299 #5760]  INFO -- default-centos-67:  +# Do NOT modify this file by hand.
+I, [2016-10-14T16:38:57.939299 #5760]  INFO -- default-centos-67:  +
+I, [2016-10-14T16:38:57.939799 #5760]  INFO -- default-centos-67:  +[mysql55-community]
+I, [2016-10-14T16:38:57.939799 #5760]  INFO -- default-centos-67:  +name=MySQL 5.5 Community Server
+I, [2016-10-14T16:38:57.939799 #5760]  INFO -- default-centos-67:  +baseurl=http://repo.mysql.com/yum/mysql-5.5-community/el/$releasever/$basearch/
+I, [2016-10-14T16:38:57.940299 #5760]  INFO -- default-centos-67:  +enabled=1
+I, [2016-10-14T16:38:57.940299 #5760]  INFO -- default-centos-67:  +failovermethod=priority
+I, [2016-10-14T16:38:57.940299 #5760]  INFO -- default-centos-67:  +gpgcheck=1
+I, [2016-10-14T16:38:57.952300 #5760]  INFO -- default-centos-67:  +gpgkey=https://raw.githubusercontent.com/chef-cookbooks/yum-mysql-community/master/files/default/mysql_pubkey.asc
+I, [2016-10-14T16:38:58.264340 #5760]  INFO -- default-centos-67:  - change mode from '' to '0644'
+I, [2016-10-14T16:38:58.324848 #5760]  INFO -- default-centos-67:  - restore selinux security context
+I, [2016-10-14T16:38:58.825911 #5760]  INFO -- default-centos-67:       * execute[yum clean metadata mysql55-community] action run
+I, [2016-10-14T16:38:58.825911 #5760]  INFO -- default-centos-67:  - execute yum clean metadata --disablerepo=* --enablerepo=mysql55-community
+I, [2016-10-14T16:39:02.083825 #5760]  INFO -- default-centos-67:       * execute[yum-makecache-mysql55-community] action run
+I, [2016-10-14T16:39:02.083825 #5760]  INFO -- default-centos-67:  - execute yum -q -y makecache --disablerepo=* --enablerepo=mysql55-community
+I, [2016-10-14T16:39:02.084825 #5760]  INFO -- default-centos-67:       * ruby_block[yum-cache-reload-mysql55-community] action create
+I, [2016-10-14T16:39:02.084825 #5760]  INFO -- default-centos-67:  - execute the ruby block yum-cache-reload-mysql55-community
+I, [2016-10-14T16:39:02.084825 #5760]  INFO -- default-centos-67:       * execute[yum clean metadata mysql55-community] action nothing (skipped due to action :nothing)
+I, [2016-10-14T16:39:02.087325 #5760]  INFO -- default-centos-67:       * execute[yum-makecache-mysql55-community] action nothing (skipped due to action :nothing)
+I, [2016-10-14T16:39:02.087325 #5760]  INFO -- default-centos-67:       * ruby_block[yum-cache-reload-mysql55-community] action nothing (skipped due to action :nothing)
+I, [2016-10-14T16:39:02.087325 #5760]  INFO -- default-centos-67:     
+I, [2016-10-14T16:40:33.452427 #5760]  INFO -- default-centos-67:     * yum_package[wordpressdb :create mysql-community-server] action install
+I, [2016-10-14T16:40:33.455428 #5760]  INFO -- default-centos-67:       - install version 5.5.53-2.el6 of package mysql-community-server
+I, [2016-10-14T16:40:33.656953 #5760]  INFO -- default-centos-67:     * service[wordpressdb :create mysqld] action stop (up to date)
+I, [2016-10-14T16:40:33.777469 #5760]  INFO -- default-centos-67:     * service[wordpressdb :create mysqld] action disable
+I, [2016-10-14T16:40:33.777469 #5760]  INFO -- default-centos-67:       - disable service service[wordpressdb :create mysqld]
+I, [2016-10-14T16:40:33.798971 #5760]  INFO -- default-centos-67:     * group[wordpressdb :create mysql] action create (up to date)
+I, [2016-10-14T16:40:33.809973 #5760]  INFO -- default-centos-67:     * linux_user[wordpressdb :create mysql] action create (up to date)
+I, [2016-10-14T16:40:33.810973 #5760]  INFO -- default-centos-67:     * file[wordpressdb :create /etc/mysql/my.cnf] action delete (up to date)
+I, [2016-10-14T16:40:33.871981 #5760]  INFO -- default-centos-67:     * file[wordpressdb :create /etc/my.cnf] action delete
+I, [2016-10-14T16:40:33.871981 #5760]  INFO -- default-centos-67:       - delete file /etc/my.cnf
+I, [2016-10-14T16:40:33.875481 #5760]  INFO -- default-centos-67:     * link[wordpressdb :create /usr/share/my-default.cnf] action create
+I, [2016-10-14T16:40:33.876981 #5760]  INFO -- default-centos-67:       - create symlink at /usr/share/my-default.cnf to /etc/mysql-wordpressdb/my.cnf
+I, [2016-10-14T16:40:33.898484 #5760]  INFO -- default-centos-67:     * directory[wordpressdb :create /etc/mysql-wordpressdb] action create
+I, [2016-10-14T16:40:33.899484 #5760]  INFO -- default-centos-67:       - create new directory /etc/mysql-wordpressdb
+I, [2016-10-14T16:40:33.899984 #5760]  INFO -- default-centos-67:       - change mode from '' to '0750'
+I, [2016-10-14T16:40:33.899984 #5760]  INFO -- default-centos-67:       - change owner from '' to 'mysql'
+I, [2016-10-14T16:40:34.201022 #5760]  INFO -- default-centos-67:       - change group from '' to 'mysql'
+I, [2016-10-14T16:40:34.201523 #5760]  INFO -- default-centos-67:       - restore selinux security context
+I, [2016-10-14T16:40:34.202023 #5760]  INFO -- default-centos-67:     * directory[wordpressdb :create /etc/mysql-wordpressdb/conf.d] action create
+I, [2016-10-14T16:40:34.203023 #5760]  INFO -- default-centos-67:       - create new directory /etc/mysql-wordpressdb/conf.d
+I, [2016-10-14T16:40:34.203023 #5760]  INFO -- default-centos-67:       - change mode from '' to '0750'
+I, [2016-10-14T16:40:34.203023 #5760]  INFO -- default-centos-67:       - change owner from '' to 'mysql'
+I, [2016-10-14T16:40:34.336040 #5760]  INFO -- default-centos-67:       - change group from '' to 'mysql'
+I, [2016-10-14T16:40:34.336540 #5760]  INFO -- default-centos-67:       - restore selinux security context
+I, [2016-10-14T16:40:34.337040 #5760]  INFO -- default-centos-67:     * directory[wordpressdb :create /var/run/mysql-wordpressdb] action create
+I, [2016-10-14T16:40:34.347541 #5760]  INFO -- default-centos-67:       - create new directory /var/run/mysql-wordpressdb
+I, [2016-10-14T16:40:34.347541 #5760]  INFO -- default-centos-67:       - change mode from '' to '0755'
+I, [2016-10-14T16:40:34.347541 #5760]  INFO -- default-centos-67:       - change owner from '' to 'mysql'
+I, [2016-10-14T16:40:34.478558 #5760]  INFO -- default-centos-67:       - change group from '' to 'mysql'
+I, [2016-10-14T16:40:34.478558 #5760]  INFO -- default-centos-67:       - restore selinux security context
+I, [2016-10-14T16:40:34.489059 #5760]  INFO -- default-centos-67:     * directory[wordpressdb :create /var/log/mysql-wordpressdb] action create
+I, [2016-10-14T16:40:34.490059 #5760]  INFO -- default-centos-67:       - create new directory /var/log/mysql-wordpressdb
+I, [2016-10-14T16:40:34.490559 #5760]  INFO -- default-centos-67:       - change mode from '' to '0750'
+I, [2016-10-14T16:40:34.490559 #5760]  INFO -- default-centos-67:       - change owner from '' to 'mysql'
+I, [2016-10-14T16:40:34.621576 #5760]  INFO -- default-centos-67:       - change group from '' to 'mysql'
+I, [2016-10-14T16:40:34.623076 #5760]  INFO -- default-centos-67:       - restore selinux security context
+I, [2016-10-14T16:40:34.634077 #5760]  INFO -- default-centos-67:     * directory[wordpressdb :create /var/lib/mysql-wordpressdb] action create
+I, [2016-10-14T16:40:34.635078 #5760]  INFO -- default-centos-67:       - create new directory /var/lib/mysql-wordpressdb
+I, [2016-10-14T16:40:34.635078 #5760]  INFO -- default-centos-67:       - change mode from '' to '0750'
+I, [2016-10-14T16:40:34.635078 #5760]  INFO -- default-centos-67:       - change owner from '' to 'mysql'
+I, [2016-10-14T16:40:34.768595 #5760]  INFO -- default-centos-67:       - change group from '' to 'mysql'
+I, [2016-10-14T16:40:34.770095 #5760]  INFO -- default-centos-67:       - restore selinux security context
+I, [2016-10-14T16:40:34.920614 #5760]  INFO -- default-centos-67:     * template[wordpressdb :create /etc/mysql-wordpressdb/my.cnf] action create
+I, [2016-10-14T16:40:34.932115 #5760]  INFO -- default-centos-67:       - create new file /etc/mysql-wordpressdb/my.cnf
+I, [2016-10-14T16:40:34.932615 #5760]  INFO -- default-centos-67:       - update content in file /etc/mysql-wordpressdb/my.cnf from none to 57a227
+I, [2016-10-14T16:40:34.932615 #5760]  INFO -- default-centos-67:       --- /etc/mysql-wordpressdb/my.cnf	2016-10-14 11:10:33.256999864 +0000
+I, [2016-10-14T16:40:34.932615 #5760]  INFO -- default-centos-67:       +++ /etc/mysql-wordpressdb/.chef-my20161014-2212-1864wje.cnf	2016-10-14 11:10:33.255999862 +0000
+I, [2016-10-14T16:40:34.933115 #5760]  INFO -- default-centos-67:       @@ -1 +1,23 @@
+I, [2016-10-14T16:40:34.933115 #5760]  INFO -- default-centos-67:       +# Chef generated my.cnf for instance mysql-wordpressdb
+I, [2016-10-14T16:40:34.933115 #5760]  INFO -- default-centos-67:       +
+I, [2016-10-14T16:40:34.933115 #5760]  INFO -- default-centos-67:       +[client]
+I, [2016-10-14T16:40:34.933115 #5760]  INFO -- default-centos-67:       +default-character-set          = utf8
+I, [2016-10-14T16:40:34.940616 #5760]  INFO -- default-centos-67:       +port                           = 3306
+I, [2016-10-14T16:40:34.941116 #5760]  INFO -- default-centos-67:       +socket                         = /var/run/mysql-wordpressdb/mysqld.sock
+I, [2016-10-14T16:40:34.941116 #5760]  INFO -- default-centos-67:       +
+I, [2016-10-14T16:40:34.941616 #5760]  INFO -- default-centos-67:       +[mysql]
+I, [2016-10-14T16:40:34.941616 #5760]  INFO -- default-centos-67:       +default-character-set          = utf8
+I, [2016-10-14T16:40:34.941616 #5760]  INFO -- default-centos-67:       +
+I, [2016-10-14T16:40:34.941616 #5760]  INFO -- default-centos-67:       +[mysqld]
+I, [2016-10-14T16:40:34.942117 #5760]  INFO -- default-centos-67:       +user                           = mysql
+I, [2016-10-14T16:40:34.942117 #5760]  INFO -- default-centos-67:       +pid-file                       = /var/run/mysql-wordpressdb/mysqld.pid
+I, [2016-10-14T16:40:34.942117 #5760]  INFO -- default-centos-67:       +socket                         = /var/run/mysql-wordpressdb/mysqld.sock
+I, [2016-10-14T16:40:34.942617 #5760]  INFO -- default-centos-67:       +port                           = 3306
+I, [2016-10-14T16:40:34.942617 #5760]  INFO -- default-centos-67:       +datadir                        = /var/lib/mysql-wordpressdb
+I, [2016-10-14T16:40:34.942617 #5760]  INFO -- default-centos-67:       +tmpdir                         = /tmp
+I, [2016-10-14T16:40:34.943117 #5760]  INFO -- default-centos-67:       +log-error                      = /var/log/mysql-wordpressdb/error.log
+I, [2016-10-14T16:40:34.943117 #5760]  INFO -- default-centos-67:       +!includedir /etc/mysql-wordpressdb/conf.d
+I, [2016-10-14T16:40:34.955618 #5760]  INFO -- default-centos-67:       +
+I, [2016-10-14T16:40:34.956118 #5760]  INFO -- default-centos-67:       +[mysqld_safe]
+I, [2016-10-14T16:40:34.957118 #5760]  INFO -- default-centos-67:       +socket                         = /var/run/mysql-wordpressdb/mysqld.sock
+I, [2016-10-14T16:40:34.957118 #5760]  INFO -- default-centos-67:       - change mode from '' to '0600'
+I, [2016-10-14T16:40:34.957118 #5760]  INFO -- default-centos-67:       - change owner from '' to 'mysql'
+I, [2016-10-14T16:40:35.090135 #5760]  INFO -- default-centos-67:       - change group from '' to 'mysql'
+I, [2016-10-14T16:40:35.091636 #5760]  INFO -- default-centos-67:       - restore selinux security context
+I, [2016-10-14T16:40:40.593834 #5760]  INFO -- default-centos-67:     * bash[wordpressdb :create initial records] action run
+I, [2016-10-14T16:40:40.595334 #5760]  INFO -- default-centos-67:       - execute "bash"  "/tmp/chef-script20161014-2212-t21t5l"
+I, [2016-10-14T16:40:40.596835 #5760]  INFO -- default-centos-67:   
+I, [2016-10-14T16:40:40.598335 #5760]  INFO -- default-centos-67: Recipe: mywordpress::database
+I, [2016-10-14T16:40:40.611336 #5760]  INFO -- default-centos-67:   * mysql_service[wordpressdb] action start
+I, [2016-10-14T16:40:40.753354 #5760]  INFO -- default-centos-67:     * template[wordpressdb :start /etc/init.d/mysql-wordpressdb] action create
+I, [2016-10-14T16:40:40.774857 #5760]  INFO -- default-centos-67:       - create new file /etc/init.d/mysql-wordpressdb
+I, [2016-10-14T16:40:40.775357 #5760]  INFO -- default-centos-67:       - update content in file /etc/init.d/mysql-wordpressdb from none to e96a3c
+I, [2016-10-14T16:40:40.775857 #5760]  INFO -- default-centos-67:       --- /etc/init.d/mysql-wordpressdb	2016-10-14 11:10:39.087999409 +0000
+I, [2016-10-14T16:40:40.776357 #5760]  INFO -- default-centos-67:       +++ /etc/init.d/.chef-mysql-wordpressdb20161014-2212-1tok193	2016-10-14 11:10:39.087999407 +0000
+I, [2016-10-14T16:40:40.776857 #5760]  INFO -- default-centos-67:       @@ -1 +1,254 @@
+I, [2016-10-14T16:40:40.777358 #5760]  INFO -- default-centos-67:       +#!/bin/bash
+I, [2016-10-14T16:40:40.777858 #5760]  INFO -- default-centos-67:       +#
+I, [2016-10-14T16:40:40.777858 #5760]  INFO -- default-centos-67:       +### BEGIN INIT INFO
+I, [2016-10-14T16:40:40.777858 #5760]  INFO -- default-centos-67:       +# Provides:          mysql-wordpressdb
+I, [2016-10-14T16:40:40.783358 #5760]  INFO -- default-centos-67:       +# Required-Start:    $remote_fs $syslog
+I, [2016-10-14T16:40:40.783858 #5760]  INFO -- default-centos-67:       +# Required-Stop:     $remote_fs $syslog
+I, [2016-10-14T16:40:40.783858 #5760]  INFO -- default-centos-67:       +# Should-Start:      $network $time
+I, [2016-10-14T16:40:40.783858 #5760]  INFO -- default-centos-67:       +# Should-Stop:       $network $time
+I, [2016-10-14T16:40:40.783858 #5760]  INFO -- default-centos-67:       +# Default-Start:     2 3 4 5
+I, [2016-10-14T16:40:40.783858 #5760]  INFO -- default-centos-67:       +# Default-Stop:      0 1 6
+I, [2016-10-14T16:40:40.783858 #5760]  INFO -- default-centos-67:       +# Short-Description: Start and stop the mysql database server daemon
+I, [2016-10-14T16:40:40.784358 #5760]  INFO -- default-centos-67:       +# Description:       Controls the main MySQL database server daemon "mysqld"
+I, [2016-10-14T16:40:40.784358 #5760]  INFO -- default-centos-67:       +#                    and its wrapper script "mysqld_safe".
+I, [2016-10-14T16:40:40.784358 #5760]  INFO -- default-centos-67:       +### END INIT INFO
+I, [2016-10-14T16:40:40.784358 #5760]  INFO -- default-centos-67:       +
+I, [2016-10-14T16:40:40.784358 #5760]  INFO -- default-centos-67:       +# set -e
+I, [2016-10-14T16:40:40.784358 #5760]  INFO -- default-centos-67:       +# set -u
+I, [2016-10-14T16:40:40.784358 #5760]  INFO -- default-centos-67:       +
+I, [2016-10-14T16:40:40.784358 #5760]  INFO -- default-centos-67:       +### Exit code reference
+I, [2016-10-14T16:40:40.784858 #5760]  INFO -- default-centos-67:       +# http://fedoraproject.org/wiki/Packaging:SysVInitScript
+I, [2016-10-14T16:40:40.784858 #5760]  INFO -- default-centos-67:       +# http://refspecs.linuxbase.org/LSB_3.1.0/LSB-Core-generic/LSB-Core-generic/iniscrptact.html
+I, [2016-10-14T16:40:40.784858 #5760]  INFO -- default-centos-67:       +
+I, [2016-10-14T16:40:40.784858 #5760]  INFO -- default-centos-67:       +# Source functions
+I, [2016-10-14T16:40:40.784858 #5760]  INFO -- default-centos-67:       +# Source RHEL function library.
+I, [2016-10-14T16:40:40.785859 #5760]  INFO -- default-centos-67:       +. /etc/rc.d/init.d/functions
+I, [2016-10-14T16:40:40.785859 #5760]  INFO -- default-centos-67:       +
+I, [2016-10-14T16:40:40.785859 #5760]  INFO -- default-centos-67:       +####
+I, [2016-10-14T16:40:40.785859 #5760]  INFO -- default-centos-67:       +# Variables
+I, [2016-10-14T16:40:40.785859 #5760]  INFO -- default-centos-67:       +####
+I, [2016-10-14T16:40:40.786359 #5760]  INFO -- default-centos-67:       +
+I, [2016-10-14T16:40:40.786359 #5760]  INFO -- default-centos-67:       +STARTTIMEOUT=900
+I, [2016-10-14T16:40:40.786359 #5760]  INFO -- default-centos-67:       +STOPTIMEOUT=900
+I, [2016-10-14T16:40:40.786359 #5760]  INFO -- default-centos-67:       +PID_DELAY=60
+I, [2016-10-14T16:40:40.786359 #5760]  INFO -- default-centos-67:       +
+I, [2016-10-14T16:40:40.786359 #5760]  INFO -- default-centos-67:       +####
+I, [2016-10-14T16:40:40.786359 #5760]  INFO -- default-centos-67:       +# Helper functions
+I, [2016-10-14T16:40:40.786859 #5760]  INFO -- default-centos-67:       +###
+I, [2016-10-14T16:40:40.786859 #5760]  INFO -- default-centos-67:       +
+I, [2016-10-14T16:40:40.943379 #5760]  INFO -- default-centos-67:       +# Boolean function to see if MYSQL_PID exists and is a number
+I, [2016-10-14T16:40:40.943379 #5760]  INFO -- default-centos-67:       +pid_exists() {
+I, [2016-10-14T16:40:40.943879 #5760]  INFO -- default-centos-67:       +    PID_EXISTS=1
+I, [2016-10-14T16:40:40.943879 #5760]  INFO -- default-centos-67:       +    if [ -f /var/run/mysql-wordpressdb/mysqld.pid ]; then
+I, [2016-10-14T16:40:40.943879 #5760]  INFO -- default-centos-67:       +        MYSQLD_PID=`cat /var/run/mysql-wordpressdb/mysqld.pid 2>/dev/null`
+I, [2016-10-14T16:40:40.943879 #5760]  INFO -- default-centos-67:       +	      if [ -n "$MYSQLD_PID" ] && [ -d "/proc/$MYSQLD_PID" ] ; then
+I, [2016-10-14T16:40:40.943879 #5760]  INFO -- default-centos-67:       +	          PID_EXISTS=0
+I, [2016-10-14T16:40:40.943879 #5760]  INFO -- default-centos-67:       +	      fi
+I, [2016-10-14T16:40:40.943879 #5760]  INFO -- default-centos-67:       +    fi
+I, [2016-10-14T16:40:40.943879 #5760]  INFO -- default-centos-67:       +    return $PID_EXISTS
+I, [2016-10-14T16:40:40.944379 #5760]  INFO -- default-centos-67:       +}
+I, [2016-10-14T16:40:40.944379 #5760]  INFO -- default-centos-67:       +
+I, [2016-10-14T16:40:40.944379 #5760]  INFO -- default-centos-67:       +# Use mysqladmin to ping the service as an invalid user over a socket
+I, [2016-10-14T16:40:40.944379 #5760]  INFO -- default-centos-67:       +running() {
+I, [2016-10-14T16:40:40.944379 #5760]  INFO -- default-centos-67:       +    RUNNING=1
+I, [2016-10-14T16:40:40.944379 #5760]  INFO -- default-centos-67:       +    RESPONSE=`/usr/bin/mysqladmin --defaults-file=/etc/mysql-wordpressdb/my.cnf --user=UNKNOWN_MYSQL_USER ping 2>&1`
+I, [2016-10-14T16:40:40.944379 #5760]  INFO -- default-centos-67:       +    local mret=$?
+I, [2016-10-14T16:40:40.944379 #5760]  INFO -- default-centos-67:       +    if pid_exists \
+I, [2016-10-14T16:40:40.944879 #5760]  INFO -- default-centos-67:       +        && [ $mret -eq 0 ] \
+I, [2016-10-14T16:40:40.944879 #5760]  INFO -- default-centos-67:       +        || [ `echo $RESPONSE | grep -q "Access denied for user"` ]; then
+I, [2016-10-14T16:40:40.944879 #5760]  INFO -- default-centos-67:       +        RUNNING=0
+I, [2016-10-14T16:40:40.944879 #5760]  INFO -- default-centos-67:       +    fi
+I, [2016-10-14T16:40:40.944879 #5760]  INFO -- default-centos-67:       +    return $RUNNING
+I, [2016-10-14T16:40:40.944879 #5760]  INFO -- default-centos-67:       +}
+I, [2016-10-14T16:40:40.944879 #5760]  INFO -- default-centos-67:       +
+I, [2016-10-14T16:40:40.944879 #5760]  INFO -- default-centos-67:       +writable_error_log() {
+I, [2016-10-14T16:40:40.944879 #5760]  INFO -- default-centos-67:       +    WRITABLE_ERROR_LOG=1
+I, [2016-10-14T16:40:40.945379 #5760]  INFO -- default-centos-67:       +	  touch "/var/log/mysql-wordpressdb/error.log" 2>/dev/null
+I, [2016-10-14T16:40:40.945379 #5760]  INFO -- default-centos-67:       +    touchret=$?
+I, [2016-10-14T16:40:40.945379 #5760]  INFO -- default-centos-67:       +	  if [ $touchret -eq 0 ]; then
+I, [2016-10-14T16:40:40.945379 #5760]  INFO -- default-centos-67:       +        chown mysql:mysql /var/log/mysql-wordpressdb/error.log
+I, [2016-10-14T16:40:40.945379 #5760]  INFO -- default-centos-67:       +        return 0
+I, [2016-10-14T16:40:40.945379 #5760]  INFO -- default-centos-67:       +    else
+I, [2016-10-14T16:40:40.945379 #5760]  INFO -- default-centos-67:       +        return $WRITABLE_ERROR_LOG
+I, [2016-10-14T16:40:40.945379 #5760]  INFO -- default-centos-67:       +    fi
+I, [2016-10-14T16:40:40.945379 #5760]  INFO -- default-centos-67:       +}
+I, [2016-10-14T16:40:40.945379 #5760]  INFO -- default-centos-67:       +
+I, [2016-10-14T16:40:40.945879 #5760]  INFO -- default-centos-67:       +print_start_success() {
+I, [2016-10-14T16:40:40.945879 #5760]  INFO -- default-centos-67:       +    action $"Starting mysql-wordpressdb: " /bin/true
+I, [2016-10-14T16:40:40.945879 #5760]  INFO -- default-centos-67:       +    return 0;
+I, [2016-10-14T16:40:40.945879 #5760]  INFO -- default-centos-67:       +}
+I, [2016-10-14T16:40:40.945879 #5760]  INFO -- default-centos-67:       +
+I, [2016-10-14T16:40:40.945879 #5760]  INFO -- default-centos-67:       +print_start_failure() {
+I, [2016-10-14T16:40:40.946379 #5760]  INFO -- default-centos-67:       +    action $"Starting mysql-wordpressdb: " /bin/false
+I, [2016-10-14T16:40:40.946379 #5760]  INFO -- default-centos-67:       +    return 0;
+I, [2016-10-14T16:40:40.946379 #5760]  INFO -- default-centos-67:       +}
+I, [2016-10-14T16:40:40.946379 #5760]  INFO -- default-centos-67:       +
+I, [2016-10-14T16:40:40.946379 #5760]  INFO -- default-centos-67:       +print_reload_success() {
+I, [2016-10-14T16:40:40.946379 #5760]  INFO -- default-centos-67:       +    action $"Reloading mysql-wordpressdb" /bin/true
+I, [2016-10-14T16:40:40.946379 #5760]  INFO -- default-centos-67:       +    return 0;
+I, [2016-10-14T16:40:40.958381 #5760]  INFO -- default-centos-67:       +}
+I, [2016-10-14T16:40:40.958381 #5760]  INFO -- default-centos-67:       +
+I, [2016-10-14T16:40:40.958381 #5760]  INFO -- default-centos-67:       +print_reload_failure() {
+I, [2016-10-14T16:40:40.958381 #5760]  INFO -- default-centos-67:       +    action $"Reloading mysql-wordpressdb" /bin/false
+I, [2016-10-14T16:40:40.958381 #5760]  INFO -- default-centos-67:       +    return 0;
+I, [2016-10-14T16:40:40.958881 #5760]  INFO -- default-centos-67:       +}
+I, [2016-10-14T16:40:40.958881 #5760]  INFO -- default-centos-67:       +
+I, [2016-10-14T16:40:40.958881 #5760]  INFO -- default-centos-67:       +print_stop_success() {
+I, [2016-10-14T16:40:40.958881 #5760]  INFO -- default-centos-67:       +    action $"Stopping mysql-wordpressdb: " /bin/true
+I, [2016-10-14T16:40:40.958881 #5760]  INFO -- default-centos-67:       +    return 0;
+I, [2016-10-14T16:40:40.958881 #5760]  INFO -- default-centos-67:       +}
+I, [2016-10-14T16:40:40.958881 #5760]  INFO -- default-centos-67:       +
+I, [2016-10-14T16:40:40.958881 #5760]  INFO -- default-centos-67:       +print_stop_failure() {
+I, [2016-10-14T16:40:40.959381 #5760]  INFO -- default-centos-67:       +    action $"Stopping mysql-wordpressdb: " /bin/false
+I, [2016-10-14T16:40:40.959381 #5760]  INFO -- default-centos-67:       +    return 0;
+I, [2016-10-14T16:40:40.959381 #5760]  INFO -- default-centos-67:       +}
+I, [2016-10-14T16:40:40.959381 #5760]  INFO -- default-centos-67:       +
+I, [2016-10-14T16:40:40.959381 #5760]  INFO -- default-centos-67:       +start_command() {
+I, [2016-10-14T16:40:40.959381 #5760]  INFO -- default-centos-67:       +    # Attempt to start mysql-wordpressdb
+I, [2016-10-14T16:40:40.959381 #5760]  INFO -- default-centos-67:       +    echo "Starting MySQL instance mysql-wordpressdb"
+I, [2016-10-14T16:40:40.959381 #5760]  INFO -- default-centos-67:       +
+I, [2016-10-14T16:40:40.959381 #5760]  INFO -- default-centos-67:       +    local scl_name=""
+I, [2016-10-14T16:40:40.959881 #5760]  INFO -- default-centos-67:       +
+I, [2016-10-14T16:40:40.959881 #5760]  INFO -- default-centos-67:       +    if [ -z $scl_name ]; then
+I, [2016-10-14T16:40:40.959881 #5760]  INFO -- default-centos-67:       +        /usr/bin/mysqld_safe \
+I, [2016-10-14T16:40:40.959881 #5760]  INFO -- default-centos-67:       +            --defaults-file=/etc/mysql-wordpressdb/my.cnf \
+I, [2016-10-14T16:40:40.959881 #5760]  INFO -- default-centos-67:       +            >/dev/null 2>&1 &
+I, [2016-10-14T16:40:40.959881 #5760]  INFO -- default-centos-67:       +        local pid=$!
+I, [2016-10-14T16:40:40.959881 #5760]  INFO -- default-centos-67:       +    else
+I, [2016-10-14T16:40:40.959881 #5760]  INFO -- default-centos-67:       +        scl enable $scl_name "/usr/bin/mysqld_safe \
+I, [2016-10-14T16:40:40.960381 #5760]  INFO -- default-centos-67:       +            --defaults-file=/etc/mysql-wordpressdb/my.cnf \
+I, [2016-10-14T16:40:40.960381 #5760]  INFO -- default-centos-67:       +            >/dev/null 2>&1 &"
+I, [2016-10-14T16:40:40.960381 #5760]  INFO -- default-centos-67:       +        local pid=$!
+I, [2016-10-14T16:40:40.960381 #5760]  INFO -- default-centos-67:       +    fi
+I, [2016-10-14T16:40:40.960381 #5760]  INFO -- default-centos-67:       +
+I, [2016-10-14T16:40:40.960881 #5760]  INFO -- default-centos-67:       +    return $pid
+I, [2016-10-14T16:40:40.960881 #5760]  INFO -- default-centos-67:       +}
+I, [2016-10-14T16:40:40.960881 #5760]  INFO -- default-centos-67:       +
+I, [2016-10-14T16:40:40.960881 #5760]  INFO -- default-centos-67:       +####
+I, [2016-10-14T16:40:40.960881 #5760]  INFO -- default-centos-67:       +# Init script actions
+I, [2016-10-14T16:40:40.960881 #5760]  INFO -- default-centos-67:       +###
+I, [2016-10-14T16:40:40.960881 #5760]  INFO -- default-centos-67:       +
+I, [2016-10-14T16:40:40.960881 #5760]  INFO -- default-centos-67:       +# Start mysql-wordpressdb
+I, [2016-10-14T16:40:40.960881 #5760]  INFO -- default-centos-67:       +start() {
+I, [2016-10-14T16:40:40.961381 #5760]  INFO -- default-centos-67:       +    # exit 0 if already running.
+I, [2016-10-14T16:40:40.961381 #5760]  INFO -- default-centos-67:       +    if running; then
+I, [2016-10-14T16:40:40.961381 #5760]  INFO -- default-centos-67:       +        print_start_success
+I, [2016-10-14T16:40:40.961381 #5760]  INFO -- default-centos-67:       +        return 0;
+I, [2016-10-14T16:40:40.961381 #5760]  INFO -- default-centos-67:       +    fi
+I, [2016-10-14T16:40:40.961381 #5760]  INFO -- default-centos-67:       +
+I, [2016-10-14T16:40:40.961381 #5760]  INFO -- default-centos-67:       +    # exit 4 if we can't write to error_log
+I, [2016-10-14T16:40:40.961381 #5760]  INFO -- default-centos-67:       +    if ! writable_error_log; then
+I, [2016-10-14T16:40:40.961381 #5760]  INFO -- default-centos-67:       +        print_start_failure
+I, [2016-10-14T16:40:40.961881 #5760]  INFO -- default-centos-67:       +        return 4
+I, [2016-10-14T16:40:40.961881 #5760]  INFO -- default-centos-67:       +    fi
+I, [2016-10-14T16:40:40.961881 #5760]  INFO -- default-centos-67:       +
+I, [2016-10-14T16:40:40.961881 #5760]  INFO -- default-centos-67:       +    # run program
+I, [2016-10-14T16:40:40.961881 #5760]  INFO -- default-centos-67:       +    start_command;
+I, [2016-10-14T16:40:40.961881 #5760]  INFO -- default-centos-67:       +    start_pid=$?
+I, [2016-10-14T16:40:40.961881 #5760]  INFO -- default-centos-67:       +
+I, [2016-10-14T16:40:40.961881 #5760]  INFO -- default-centos-67:       +    # Timeout loop
+I, [2016-10-14T16:40:40.961881 #5760]  INFO -- default-centos-67:       +    local TIMEOUT=$STARTTIMEOUT
+I, [2016-10-14T16:40:40.962381 #5760]  INFO -- default-centos-67:       +    while [ $TIMEOUT -gt 0 ]; do
+I, [2016-10-14T16:40:40.962381 #5760]  INFO -- default-centos-67:       +        if running; then
+I, [2016-10-14T16:40:40.962381 #5760]  INFO -- default-centos-67:       +            break
+I, [2016-10-14T16:40:40.962381 #5760]  INFO -- default-centos-67:       +        fi
+I, [2016-10-14T16:40:40.962381 #5760]  INFO -- default-centos-67:       +
+I, [2016-10-14T16:40:40.962381 #5760]  INFO -- default-centos-67:       +        let CURRENT_DELAY=${STARTTIMEOUT}-${TIMEOUT}
+I, [2016-10-14T16:40:40.962381 #5760]  INFO -- default-centos-67:       +        if [ $CURRENT_DELAY -gt $PID_DELAY ] \
+I, [2016-10-14T16:40:40.962381 #5760]  INFO -- default-centos-67:       +          && ! pid_exists; then
+I, [2016-10-14T16:40:40.962381 #5760]  INFO -- default-centos-67:       +            break
+I, [2016-10-14T16:40:40.962881 #5760]  INFO -- default-centos-67:       +        fi
+I, [2016-10-14T16:40:40.962881 #5760]  INFO -- default-centos-67:       +
+I, [2016-10-14T16:40:40.962881 #5760]  INFO -- default-centos-67:       +        sleep 1
+I, [2016-10-14T16:40:40.962881 #5760]  INFO -- default-centos-67:       +	      let TIMEOUT=${TIMEOUT}-1
+I, [2016-10-14T16:40:40.962881 #5760]  INFO -- default-centos-67:       +    done
+I, [2016-10-14T16:40:40.962881 #5760]  INFO -- default-centos-67:       +
+I, [2016-10-14T16:40:40.962881 #5760]  INFO -- default-centos-67:       +    if running; then
+I, [2016-10-14T16:40:40.962881 #5760]  INFO -- default-centos-67:       +        # successbaby.gif
+I, [2016-10-14T16:40:40.963381 #5760]  INFO -- default-centos-67:       +        print_start_success
+I, [2016-10-14T16:40:40.963381 #5760]  INFO -- default-centos-67:       +        return 0
+I, [2016-10-14T16:40:40.963381 #5760]  INFO -- default-centos-67:       +    elif ! pid_exists; then
+I, [2016-10-14T16:40:40.963381 #5760]  INFO -- default-centos-67:       +        # Handle startup failure
+I, [2016-10-14T16:40:40.963381 #5760]  INFO -- default-centos-67:       +        print_start_failure
+I, [2016-10-14T16:40:40.963381 #5760]  INFO -- default-centos-67:       +        return 3
+I, [2016-10-14T16:40:40.963381 #5760]  INFO -- default-centos-67:       +	  elif [ $TIMEOUT -eq 0 ]; then
+I, [2016-10-14T16:40:40.963381 #5760]  INFO -- default-centos-67:       +        # Handle timeout
+I, [2016-10-14T16:40:40.963381 #5760]  INFO -- default-centos-67:       +        print_start_failure
+I, [2016-10-14T16:40:40.963381 #5760]  INFO -- default-centos-67:       +        # clean up
+I, [2016-10-14T16:40:40.963881 #5760]  INFO -- default-centos-67:       +        kill $start_pid 2>/dev/null
+I, [2016-10-14T16:40:40.963881 #5760]  INFO -- default-centos-67:       +	      return 1
+I, [2016-10-14T16:40:40.963881 #5760]  INFO -- default-centos-67:       +	  fi
+I, [2016-10-14T16:40:40.963881 #5760]  INFO -- default-centos-67:       +}
+I, [2016-10-14T16:40:40.963881 #5760]  INFO -- default-centos-67:       +
+I, [2016-10-14T16:40:40.963881 #5760]  INFO -- default-centos-67:       +# Reload mysql-wordpressdb
+I, [2016-10-14T16:40:40.963881 #5760]  INFO -- default-centos-67:       +reload() {
+I, [2016-10-14T16:40:40.963881 #5760]  INFO -- default-centos-67:       +    /usr/bin/mysqladmin reload
+I, [2016-10-14T16:40:40.963881 #5760]  INFO -- default-centos-67:       +    local ret=$?
+I, [2016-10-14T16:40:40.964381 #5760]  INFO -- default-centos-67:       +    if [ $ret -eq 0 ]; then
+I, [2016-10-14T16:40:40.964381 #5760]  INFO -- default-centos-67:       +        print_reload_success;
+I, [2016-10-14T16:40:40.964381 #5760]  INFO -- default-centos-67:       +    else
+I, [2016-10-14T16:40:40.964381 #5760]  INFO -- default-centos-67:       +        print_reload_failure;
+I, [2016-10-14T16:40:40.964381 #5760]  INFO -- default-centos-67:       +    fi
+I, [2016-10-14T16:40:40.964381 #5760]  INFO -- default-centos-67:       +    return $ret
+I, [2016-10-14T16:40:40.964381 #5760]  INFO -- default-centos-67:       +}
+I, [2016-10-14T16:40:40.964381 #5760]  INFO -- default-centos-67:       +
+I, [2016-10-14T16:40:40.964381 #5760]  INFO -- default-centos-67:       +# Status of mysql-wordpressdb
+I, [2016-10-14T16:40:40.964881 #5760]  INFO -- default-centos-67:       +status() {
+I, [2016-10-14T16:40:40.964881 #5760]  INFO -- default-centos-67:       +    if running; then
+I, [2016-10-14T16:40:40.964881 #5760]  INFO -- default-centos-67:       +        echo "mysql-wordpressdb is running"
+I, [2016-10-14T16:40:40.964881 #5760]  INFO -- default-centos-67:       +        return 0
+I, [2016-10-14T16:40:40.965381 #5760]  INFO -- default-centos-67:       +    else
+I, [2016-10-14T16:40:40.965381 #5760]  INFO -- default-centos-67:       +        echo "mysql-wordpressdb is not running"
+I, [2016-10-14T16:40:40.965381 #5760]  INFO -- default-centos-67:       +        return 1
+I, [2016-10-14T16:40:40.965381 #5760]  INFO -- default-centos-67:       +    fi
+I, [2016-10-14T16:40:40.965381 #5760]  INFO -- default-centos-67:       +}
+I, [2016-10-14T16:40:40.965881 #5760]  INFO -- default-centos-67:       +
+I, [2016-10-14T16:40:40.965881 #5760]  INFO -- default-centos-67:       +# Stop mysql-wordpressdb
+I, [2016-10-14T16:40:40.965881 #5760]  INFO -- default-centos-67:       +stop() {
+I, [2016-10-14T16:40:40.965881 #5760]  INFO -- default-centos-67:       +    if running; then
+I, [2016-10-14T16:40:40.965881 #5760]  INFO -- default-centos-67:       +        echo "Stopping MySQL instance mysql-wordpressdb"
+I, [2016-10-14T16:40:40.966382 #5760]  INFO -- default-centos-67:       +        if [ -f /var/run/mysql-wordpressdb/mysqld.pid ]; then
+I, [2016-10-14T16:40:40.966382 #5760]  INFO -- default-centos-67:       +            /bin/kill `cat /var/run/mysql-wordpressdb/mysqld.pid 2>/dev/null`
+I, [2016-10-14T16:40:40.966382 #5760]  INFO -- default-centos-67:       +            kstat=$?
+I, [2016-10-14T16:40:40.966382 #5760]  INFO -- default-centos-67:       +        fi
+I, [2016-10-14T16:40:40.966882 #5760]  INFO -- default-centos-67:       +
+I, [2016-10-14T16:40:40.966882 #5760]  INFO -- default-centos-67:       +        # Timeout loop
+I, [2016-10-14T16:40:40.966882 #5760]  INFO -- default-centos-67:       +        local TIMEOUT=$STARTTIMEOUT
+I, [2016-10-14T16:40:40.966882 #5760]  INFO -- default-centos-67:       +        while [ $TIMEOUT -gt 0 ]; do
+I, [2016-10-14T16:40:40.966882 #5760]  INFO -- default-centos-67:       +            if [ -e /var/run/mysql-wordpressdb/mysqld.pid ]; then
+I, [2016-10-14T16:40:40.966882 #5760]  INFO -- default-centos-67:       +            sleep 1
+I, [2016-10-14T16:40:40.966882 #5760]  INFO -- default-centos-67:       +            fi
+I, [2016-10-14T16:40:40.967382 #5760]  INFO -- default-centos-67:       +	          let TIMEOUT=${TIMEOUT}-1
+I, [2016-10-14T16:40:40.967382 #5760]  INFO -- default-centos-67:       +        done
+I, [2016-10-14T16:40:40.967382 #5760]  INFO -- default-centos-67:       +
+I, [2016-10-14T16:40:40.967382 #5760]  INFO -- default-centos-67:       +        return $kstat
+I, [2016-10-14T16:40:40.967382 #5760]  INFO -- default-centos-67:       +    else
+I, [2016-10-14T16:40:40.967382 #5760]  INFO -- default-centos-67:       +        echo "MySQL instance mysql-wordpressdb Stopped."
+I, [2016-10-14T16:40:40.967382 #5760]  INFO -- default-centos-67:       +        return 0
+I, [2016-10-14T16:40:40.967882 #5760]  INFO -- default-centos-67:       +    fi
+I, [2016-10-14T16:40:40.967882 #5760]  INFO -- default-centos-67:       +}
+I, [2016-10-14T16:40:40.967882 #5760]  INFO -- default-centos-67:       +
+I, [2016-10-14T16:40:40.968382 #5760]  INFO -- default-centos-67:       +# main()
+I, [2016-10-14T16:40:41.005386 #5760]  INFO -- default-centos-67:       +case "$1" in
+I, [2016-10-14T16:40:41.005386 #5760]  INFO -- default-centos-67:       +    start)
+I, [2016-10-14T16:40:41.005386 #5760]  INFO -- default-centos-67:       +        start
+I, [2016-10-14T16:40:41.005386 #5760]  INFO -- default-centos-67:       +        ;;
+I, [2016-10-14T16:40:41.005887 #5760]  INFO -- default-centos-67:       +    stop)
+I, [2016-10-14T16:40:41.005887 #5760]  INFO -- default-centos-67:       +        stop
+I, [2016-10-14T16:40:41.005887 #5760]  INFO -- default-centos-67:       +        ;;
+I, [2016-10-14T16:40:41.005887 #5760]  INFO -- default-centos-67:       +    status)
+I, [2016-10-14T16:40:41.005887 #5760]  INFO -- default-centos-67:       +        status
+I, [2016-10-14T16:40:41.005887 #5760]  INFO -- default-centos-67:       +        ;;
+I, [2016-10-14T16:40:41.005887 #5760]  INFO -- default-centos-67:       +    restart)
+I, [2016-10-14T16:40:41.006387 #5760]  INFO -- default-centos-67:       +        stop ; start
+I, [2016-10-14T16:40:41.006387 #5760]  INFO -- default-centos-67:       +        ;;
+I, [2016-10-14T16:40:41.006387 #5760]  INFO -- default-centos-67:       +    reload)
+I, [2016-10-14T16:40:41.006387 #5760]  INFO -- default-centos-67:       +        reload
+I, [2016-10-14T16:40:41.006387 #5760]  INFO -- default-centos-67:       +        ;;
+I, [2016-10-14T16:40:41.006387 #5760]  INFO -- default-centos-67:       +    *)
+I, [2016-10-14T16:40:41.006387 #5760]  INFO -- default-centos-67:       +        echo $"Usage: $0 {start|stop|status|restart|reload}"
+I, [2016-10-14T16:40:41.006387 #5760]  INFO -- default-centos-67:       +        exit 2
+I, [2016-10-14T16:40:41.006887 #5760]  INFO -- default-centos-67:       +esac
+I, [2016-10-14T16:40:41.006887 #5760]  INFO -- default-centos-67:       +
+I, [2016-10-14T16:40:41.006887 #5760]  INFO -- default-centos-67:       +exit $?
+I, [2016-10-14T16:40:41.006887 #5760]  INFO -- default-centos-67:       - change mode from '' to '0755'
+I, [2016-10-14T16:40:41.006887 #5760]  INFO -- default-centos-67:       - change owner from '' to 'root'
+I, [2016-10-14T16:40:41.006887 #5760]  INFO -- default-centos-67:       - change group from '' to 'root'
+I, [2016-10-14T16:40:41.006887 #5760]  INFO -- default-centos-67:       - restore selinux security context
+I, [2016-10-14T16:40:41.112400 #5760]  INFO -- default-centos-67:     * service[wordpressdb :start mysql-wordpressdb] action enable
+I, [2016-10-14T16:40:41.112900 #5760]  INFO -- default-centos-67:       - enable service service[wordpressdb :start mysql-wordpressdb]
+I, [2016-10-14T16:40:43.383688 #5760]  INFO -- default-centos-67:     * service[wordpressdb :start mysql-wordpressdb] action start
+I, [2016-10-14T16:40:43.384189 #5760]  INFO -- default-centos-67:       - start service service[wordpressdb :start mysql-wordpressdb]
+I, [2016-10-14T16:40:43.384189 #5760]  INFO -- default-centos-67:   
+I, [2016-10-14T16:40:43.406191 #5760]  INFO -- default-centos-67:   * link[/var/lib/mysql/mysql.sock] action create
+I, [2016-10-14T16:40:43.407191 #5760]  INFO -- default-centos-67:     - create symlink at /var/lib/mysql/mysql.sock to /var/run/mysql-wordpressdb/mysqld.sock
+I, [2016-10-14T16:40:44.618845 #5760]  INFO -- default-centos-67:   * mysql_database[wordpressdb] action create
+I, [2016-10-14T16:40:44.618845 #5760]  INFO -- default-centos-67:     - Creating schema 'wordpressdb'
+I, [2016-10-14T16:40:44.621346 #5760]  INFO -- default-centos-67:   * mysql_database_user[wordpressuser] action create
+I, [2016-10-14T16:40:44.621346 #5760]  INFO -- default-centos-67:     - Creating user 'wordpressuser'@'localhost'
+I, [2016-10-14T16:40:44.623846 #5760]  INFO -- default-centos-67:   * mysql_database_user[wordpressuser] action grant
+I, [2016-10-14T16:40:44.624346 #5760]  INFO -- default-centos-67:     - Granting privs for 'wordpressuser'@'localhost'
+I, [2016-10-14T16:40:44.624346 #5760]  INFO -- default-centos-67: Recipe: mywordpress::php
+I, [2016-10-14T16:40:59.181195 #5760]  INFO -- default-centos-67:   * yum_package[php] action install
+I, [2016-10-14T16:40:59.181195 #5760]  INFO -- default-centos-67:     - install version 5.3.3-48.el6_8 of package php
+I, [2016-10-14T16:41:04.147825 #5760]  INFO -- default-centos-67:   * yum_package[php-mysql] action install
+I, [2016-10-14T16:41:04.148325 #5760]  INFO -- default-centos-67:     - install version 5.3.3-48.el6_8 of package php-mysql
+I, [2016-10-14T16:41:08.421368 #5760]  INFO -- default-centos-67:   * service[httpd] action restart
+I, [2016-10-14T16:41:08.423368 #5760]  INFO -- default-centos-67:     - restart service service[httpd]
+I, [2016-10-14T16:41:08.424868 #5760]  INFO -- default-centos-67: Recipe: mywordpress::app
+I, [2016-10-14T16:41:22.015594 #5760]  INFO -- default-centos-67:   * remote_file[/tmp/kitchen/cache/latest.tar.gz] action create
+I, [2016-10-14T16:41:22.176615 #5760]  INFO -- default-centos-67:     - create new file /tmp/kitchen/cache/latest.tar.gz
+I, [2016-10-14T16:41:22.176615 #5760]  INFO -- default-centos-67:     - update content in file /tmp/kitchen/cache/latest.tar.gz from none to 873f56
+I, [2016-10-14T16:41:22.177615 #5760]  INFO -- default-centos-67:     (new content is binary, diff output suppressed)
+I, [2016-10-14T16:41:22.177615 #5760]  INFO -- default-centos-67:     - change mode from '' to '0755'
+I, [2016-10-14T16:41:22.177615 #5760]  INFO -- default-centos-67:     - change owner from '' to 'root'
+I, [2016-10-14T16:41:22.339135 #5760]  INFO -- default-centos-67:     - change group from '' to 'root'
+I, [2016-10-14T16:41:22.339635 #5760]  INFO -- default-centos-67:     - restore selinux security context
+I, [2016-10-14T16:41:22.779191 #5760]  INFO -- default-centos-67:   * execute[extract_some_tar] action run
+I, [2016-10-14T16:41:22.779691 #5760]  INFO -- default-centos-67:     - execute tar xzvf latest.tar.gz
+I, [2016-10-14T16:41:23.041224 #5760]  INFO -- default-centos-67:   * execute[copy the wordpress content] action run
+I, [2016-10-14T16:41:23.041224 #5760]  INFO -- default-centos-67:     - execute cp -r /tmp/kitchen/cache/wordpress/* /var/www/html
+I, [2016-10-14T16:41:23.732812 #5760]  INFO -- default-centos-67:   * template[/var/www/html/wp-config.php] action create
+I, [2016-10-14T16:41:23.976843 #5760]  INFO -- default-centos-67:     - create new file /var/www/html/wp-config.php
+I, [2016-10-14T16:41:23.976843 #5760]  INFO -- default-centos-67:     - update content in file /var/www/html/wp-config.php from none to 9e8f28
+I, [2016-10-14T16:41:23.977343 #5760]  INFO -- default-centos-67:     --- /var/www/html/wp-config.php	2016-10-14 11:11:22.062999854 +0000
+I, [2016-10-14T16:41:23.977343 #5760]  INFO -- default-centos-67:     +++ /var/www/html/.chef-wp-config20161014-2212-b026u2.php	2016-10-14 11:11:22.060999855 +0000
+I, [2016-10-14T16:41:23.982844 #5760]  INFO -- default-centos-67:     @@ -1 +1,88 @@
+I, [2016-10-14T16:41:23.983344 #5760]  INFO -- default-centos-67:     +<?php
+I, [2016-10-14T16:41:23.983344 #5760]  INFO -- default-centos-67:     +/**
+I, [2016-10-14T16:41:23.983344 #5760]  INFO -- default-centos-67:     + * The base configurations of the WordPress.
+I, [2016-10-14T16:41:23.983844 #5760]  INFO -- default-centos-67:     + *
+I, [2016-10-14T16:41:23.983844 #5760]  INFO -- default-centos-67:     + * This file has the following configurations: MySQL settings, Table Prefix,
+I, [2016-10-14T16:41:23.983844 #5760]  INFO -- default-centos-67:     + * Secret Keys, WordPress Language, and ABSPATH. You can find more information
+I, [2016-10-14T16:41:23.984344 #5760]  INFO -- default-centos-67:     + * by visiting {@link http://codex.wordpress.org/Editing_wp-config.php Editing
+I, [2016-10-14T16:41:23.989345 #5760]  INFO -- default-centos-67:     + * wp-config.php} Codex page. You can get the MySQL settings from your web host.
+I, [2016-10-14T16:41:23.989845 #5760]  INFO -- default-centos-67:     + *
+I, [2016-10-14T16:41:23.989845 #5760]  INFO -- default-centos-67:     + * This file is used by the wp-config.php creation script during the
+I, [2016-10-14T16:41:23.989845 #5760]  INFO -- default-centos-67:     + * installation. You don't have to use the web site, you can just copy this file
+I, [2016-10-14T16:41:23.989845 #5760]  INFO -- default-centos-67:     + * to "wp-config.php" and fill in the values.
+I, [2016-10-14T16:41:23.989845 #5760]  INFO -- default-centos-67:     + *
+I, [2016-10-14T16:41:23.990345 #5760]  INFO -- default-centos-67:     + * @package WordPress
+I, [2016-10-14T16:41:23.990345 #5760]  INFO -- default-centos-67:     + */
+I, [2016-10-14T16:41:23.990345 #5760]  INFO -- default-centos-67:     +
+I, [2016-10-14T16:41:24.001846 #5760]  INFO -- default-centos-67:     +// ** MySQL settings - You can get this info from your web host ** //
+I, [2016-10-14T16:41:24.002346 #5760]  INFO -- default-centos-67:     +/** The name of the database for WordPress */
+I, [2016-10-14T16:41:24.002846 #5760]  INFO -- default-centos-67:     +define('DB_NAME', 'wordpressdb');
+I, [2016-10-14T16:41:24.003347 #5760]  INFO -- default-centos-67:     +
+I, [2016-10-14T16:41:24.003347 #5760]  INFO -- default-centos-67:     +/** MySQL database username */
+I, [2016-10-14T16:41:24.003347 #5760]  INFO -- default-centos-67:     +define('DB_USER', 'wordpressuser');
+I, [2016-10-14T16:41:24.003347 #5760]  INFO -- default-centos-67:     +
+I, [2016-10-14T16:41:24.003347 #5760]  INFO -- default-centos-67:     +/** MySQL database password */
+I, [2016-10-14T16:41:24.003847 #5760]  INFO -- default-centos-67:     +define('DB_PASSWORD', 'password123');
+I, [2016-10-14T16:41:24.011348 #5760]  INFO -- default-centos-67:     +
+I, [2016-10-14T16:41:24.011348 #5760]  INFO -- default-centos-67:     +
+I, [2016-10-14T16:41:24.011348 #5760]  INFO -- default-centos-67:     +/** MySQL hostname */
+I, [2016-10-14T16:41:24.011848 #5760]  INFO -- default-centos-67:     +define('DB_HOST', 'localhost');
+I, [2016-10-14T16:41:24.011848 #5760]  INFO -- default-centos-67:     +
+I, [2016-10-14T16:41:24.011848 #5760]  INFO -- default-centos-67:     +/** Database Charset to use in creating database tables. */
+I, [2016-10-14T16:41:24.011848 #5760]  INFO -- default-centos-67:     +define('DB_CHARSET', 'utf8');
+I, [2016-10-14T16:41:24.011848 #5760]  INFO -- default-centos-67:     +
+I, [2016-10-14T16:41:24.011848 #5760]  INFO -- default-centos-67:     +/** The Database Collate type. Don't change this if in doubt. */
+I, [2016-10-14T16:41:24.014348 #5760]  INFO -- default-centos-67:     +define('DB_COLLATE', '');
+I, [2016-10-14T16:41:24.014348 #5760]  INFO -- default-centos-67:     +
+I, [2016-10-14T16:41:24.014348 #5760]  INFO -- default-centos-67:     +
+I, [2016-10-14T16:41:24.014348 #5760]  INFO -- default-centos-67:     +/**#@+
+I, [2016-10-14T16:41:24.014348 #5760]  INFO -- default-centos-67:     + * Authentication Unique Keys and Salts.
+I, [2016-10-14T16:41:24.014348 #5760]  INFO -- default-centos-67:     + *
+I, [2016-10-14T16:41:24.014848 #5760]  INFO -- default-centos-67:     + * Change these to different unique phrases!
+I, [2016-10-14T16:41:24.014848 #5760]  INFO -- default-centos-67:     + * You can generate these using the {@link https://api.wordpress.org/secret-key/1.1/salt/ WordPress.org secret-key service}
+I, [2016-10-14T16:41:24.014848 #5760]  INFO -- default-centos-67:     + * You can change these at any point in time to invalidate all existing cookies. This will force all users to have to log in again.
+I, [2016-10-14T16:41:24.014848 #5760]  INFO -- default-centos-67:     + *
+I, [2016-10-14T16:41:24.017348 #5760]  INFO -- default-centos-67:     + * @since 2.6.0
+I, [2016-10-14T16:41:24.017848 #5760]  INFO -- default-centos-67:     + */
+I, [2016-10-14T16:41:24.017848 #5760]  INFO -- default-centos-67:     +define('AUTH_KEY',         'put your unique phrase here');
+I, [2016-10-14T16:41:24.017848 #5760]  INFO -- default-centos-67:     +define('SECURE_AUTH_KEY',  'put your unique phrase here');
+I, [2016-10-14T16:41:24.018348 #5760]  INFO -- default-centos-67:     +define('LOGGED_IN_KEY',    'put your unique phrase here');
+I, [2016-10-14T16:41:24.019849 #5760]  INFO -- default-centos-67:     +define('NONCE_KEY',        'put your unique phrase here');
+I, [2016-10-14T16:41:24.019849 #5760]  INFO -- default-centos-67:     +define('AUTH_SALT',        'put your unique phrase here');
+I, [2016-10-14T16:41:24.020849 #5760]  INFO -- default-centos-67:     +define('SECURE_AUTH_SALT', 'put your unique phrase here');
+I, [2016-10-14T16:41:24.021349 #5760]  INFO -- default-centos-67:     +define('LOGGED_IN_SALT',   'put your unique phrase here');
+I, [2016-10-14T16:41:24.021349 #5760]  INFO -- default-centos-67:     +define('NONCE_SALT',       'put your unique phrase here');
+I, [2016-10-14T16:41:24.021849 #5760]  INFO -- default-centos-67:     +
+I, [2016-10-14T16:41:24.021849 #5760]  INFO -- default-centos-67:     +/**#@-*/
+I, [2016-10-14T16:41:24.021849 #5760]  INFO -- default-centos-67:     +
+I, [2016-10-14T16:41:24.021849 #5760]  INFO -- default-centos-67:     +/**
+I, [2016-10-14T16:41:24.021849 #5760]  INFO -- default-centos-67:     + * WordPress Database Table prefix.
+I, [2016-10-14T16:41:24.021849 #5760]  INFO -- default-centos-67:     + *
+I, [2016-10-14T16:41:24.023849 #5760]  INFO -- default-centos-67:     + * You can have multiple installations in one database if you give each
+I, [2016-10-14T16:41:24.023849 #5760]  INFO -- default-centos-67:     + * a unique prefix. Only numbers, letters, and underscores please!
+I, [2016-10-14T16:41:24.023849 #5760]  INFO -- default-centos-67:     + */
+I, [2016-10-14T16:41:24.023849 #5760]  INFO -- default-centos-67:     +$table_prefix  = 'wp_';
+I, [2016-10-14T16:41:24.023849 #5760]  INFO -- default-centos-67:     +
+I, [2016-10-14T16:41:24.024349 #5760]  INFO -- default-centos-67:     +/**
+I, [2016-10-14T16:41:24.024349 #5760]  INFO -- default-centos-67:     + * For developers: WordPress debugging mode.
+I, [2016-10-14T16:41:24.024349 #5760]  INFO -- default-centos-67:     + *
+I, [2016-10-14T16:41:24.026349 #5760]  INFO -- default-centos-67:     + * Change this to true to enable the display of notices during development.
+I, [2016-10-14T16:41:24.026349 #5760]  INFO -- default-centos-67:     + * It is strongly recommended that plugin and theme developers use WP_DEBUG
+I, [2016-10-14T16:41:24.026349 #5760]  INFO -- default-centos-67:     + * in their development environments.
+I, [2016-10-14T16:41:24.026349 #5760]  INFO -- default-centos-67:     + *
+I, [2016-10-14T16:41:24.026349 #5760]  INFO -- default-centos-67:     + * For information on other constants that can be used for debugging,
+I, [2016-10-14T16:41:24.026850 #5760]  INFO -- default-centos-67:     + * visit the Codex.
+I, [2016-10-14T16:41:24.026850 #5760]  INFO -- default-centos-67:     + *
+I, [2016-10-14T16:41:24.026850 #5760]  INFO -- default-centos-67:     + * @link https://codex.wordpress.org/Debugging_in_WordPress
+I, [2016-10-14T16:41:24.026850 #5760]  INFO -- default-centos-67:     + */
+I, [2016-10-14T16:41:24.029350 #5760]  INFO -- default-centos-67:     +define('WP_DEBUG', false);
+I, [2016-10-14T16:41:24.029350 #5760]  INFO -- default-centos-67:     +
+I, [2016-10-14T16:41:24.029350 #5760]  INFO -- default-centos-67:     +/* That's all, stop editing! Happy blogging. */
+I, [2016-10-14T16:41:24.029350 #5760]  INFO -- default-centos-67:     +
+I, [2016-10-14T16:41:24.029350 #5760]  INFO -- default-centos-67:     +/** Absolute path to the WordPress directory. */
+I, [2016-10-14T16:41:24.029850 #5760]  INFO -- default-centos-67:     +if ( !defined('ABSPATH') )
+I, [2016-10-14T16:41:24.029850 #5760]  INFO -- default-centos-67:     +	define('ABSPATH', dirname(__FILE__) . '/');
+I, [2016-10-14T16:41:24.029850 #5760]  INFO -- default-centos-67:     +
+I, [2016-10-14T16:41:24.031350 #5760]  INFO -- default-centos-67:     +/** Sets up WordPress vars and included files. */
+I, [2016-10-14T16:41:24.031850 #5760]  INFO -- default-centos-67:     +require_once(ABSPATH . 'wp-settings.php');
+I, [2016-10-14T16:41:24.031850 #5760]  INFO -- default-centos-67:     - change mode from '' to '0644'
+I, [2016-10-14T16:41:24.031850 #5760]  INFO -- default-centos-67:     - change owner from '' to 'root'
+I, [2016-10-14T16:41:24.613424 #5760]  INFO -- default-centos-67:     - change group from '' to 'root'
+I, [2016-10-14T16:41:24.614424 #5760]  INFO -- default-centos-67:     - restore selinux security context
+I, [2016-10-14T16:41:44.573959 #5760]  INFO -- default-centos-67:   * yum_package[php-gd] action install
+I, [2016-10-14T16:41:44.573959 #5760]  INFO -- default-centos-67:     - install version 5.3.3-48.el6_8 of package php-gd
+I, [2016-10-14T16:41:52.276937 #5760]  INFO -- default-centos-67:   * service[httpd] action restart
+I, [2016-10-14T16:41:52.277937 #5760]  INFO -- default-centos-67:     - restart service service[httpd]
+I, [2016-10-14T16:41:53.519595 #5760]  INFO -- default-centos-67: 
+I, [2016-10-14T16:41:53.520095 #5760]  INFO -- default-centos-67: Running handlers:
+I, [2016-10-14T16:41:53.520095 #5760]  INFO -- default-centos-67: Running handlers complete
+I, [2016-10-14T16:41:53.520095 #5760]  INFO -- default-centos-67: 
+I, [2016-10-14T16:41:53.520095 #5760]  INFO -- default-centos-67: Deprecated features used!
+I, [2016-10-14T16:41:53.520095 #5760]  INFO -- default-centos-67:   Cloning resource attributes for mysql_database_user[wordpressuser] from prior resource (CHEF-3694)
+I, [2016-10-14T16:41:53.520095 #5760]  INFO -- default-centos-67: Previous mysql_database_user[wordpressuser]: /tmp/kitchen/cache/cookbooks/mywordpress/recipes/database.rb:52:in `from_file'
+I, [2016-10-14T16:41:53.520095 #5760]  INFO -- default-centos-67: Current  mysql_database_user[wordpressuser]: /tmp/kitchen/cache/cookbooks/mywordpress/recipes/database.rb:61:in `from_file' at 1 location:
+I, [2016-10-14T16:41:53.520095 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mywordpress/recipes/database.rb:61:in `from_file'
+I, [2016-10-14T16:41:53.520595 #5760]  INFO -- default-centos-67:   Cloning resource attributes for service[httpd] from prior resource (CHEF-3694)
+I, [2016-10-14T16:41:53.520595 #5760]  INFO -- default-centos-67: Previous service[httpd]: /tmp/kitchen/cache/cookbooks/mywordpress/recipes/apache.rb:16:in `from_file'
+I, [2016-10-14T16:41:53.520595 #5760]  INFO -- default-centos-67: Current  service[httpd]: /tmp/kitchen/cache/cookbooks/mywordpress/recipes/php.rb:23:in `from_file' at 1 location:
+I, [2016-10-14T16:41:53.520595 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mywordpress/recipes/php.rb:23:in `from_file'
+I, [2016-10-14T16:41:53.520595 #5760]  INFO -- default-centos-67:   node.set is deprecated and will be removed in Chef 14, please use node.default/node.override (or node.normal only if you really need persistence) at 116 locations:
+I, [2016-10-14T16:41:53.520595 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:265:in `pkginfo'
+I, [2016-10-14T16:41:53.520595 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:266:in `pkginfo'
+I, [2016-10-14T16:41:53.520595 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:267:in `pkginfo'
+I, [2016-10-14T16:41:53.520595 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:268:in `pkginfo'
+I, [2016-10-14T16:41:53.521095 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:269:in `pkginfo'
+I, [2016-10-14T16:41:53.521095 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:270:in `pkginfo'
+I, [2016-10-14T16:41:53.521095 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:271:in `pkginfo'
+I, [2016-10-14T16:41:53.521095 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:272:in `pkginfo'
+I, [2016-10-14T16:41:53.521095 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:273:in `pkginfo'
+I, [2016-10-14T16:41:53.521095 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:274:in `pkginfo'
+I, [2016-10-14T16:41:53.521095 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:275:in `pkginfo'
+I, [2016-10-14T16:41:53.521095 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:276:in `pkginfo'
+I, [2016-10-14T16:41:53.521095 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:277:in `pkginfo'
+I, [2016-10-14T16:41:53.521595 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:278:in `pkginfo'
+I, [2016-10-14T16:41:53.521595 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:279:in `pkginfo'
+I, [2016-10-14T16:41:53.521595 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:280:in `pkginfo'
+I, [2016-10-14T16:41:53.521595 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:281:in `pkginfo'
+I, [2016-10-14T16:41:53.521595 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:282:in `pkginfo'
+I, [2016-10-14T16:41:53.521595 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:283:in `pkginfo'
+I, [2016-10-14T16:41:53.521595 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:284:in `pkginfo'
+I, [2016-10-14T16:41:53.522095 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:285:in `pkginfo'
+I, [2016-10-14T16:41:53.522095 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:286:in `pkginfo'
+I, [2016-10-14T16:41:53.522095 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:287:in `pkginfo'
+I, [2016-10-14T16:41:53.522095 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:288:in `pkginfo'
+I, [2016-10-14T16:41:53.522095 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:289:in `pkginfo'
+I, [2016-10-14T16:41:53.522095 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:290:in `pkginfo'
+I, [2016-10-14T16:41:53.522095 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:291:in `pkginfo'
+I, [2016-10-14T16:41:53.522095 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:292:in `pkginfo'
+I, [2016-10-14T16:41:53.522095 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:293:in `pkginfo'
+I, [2016-10-14T16:41:53.535597 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:294:in `pkginfo'
+I, [2016-10-14T16:41:53.536097 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:295:in `pkginfo'
+I, [2016-10-14T16:41:53.536097 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:296:in `pkginfo'
+I, [2016-10-14T16:41:53.536097 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:297:in `pkginfo'
+I, [2016-10-14T16:41:53.536097 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:298:in `pkginfo'
+I, [2016-10-14T16:41:53.536097 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:299:in `pkginfo'
+I, [2016-10-14T16:41:53.536597 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:300:in `pkginfo'
+I, [2016-10-14T16:41:53.536597 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:301:in `pkginfo'
+I, [2016-10-14T16:41:53.536597 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:302:in `pkginfo'
+I, [2016-10-14T16:41:53.536597 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:303:in `pkginfo'
+I, [2016-10-14T16:41:53.536597 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:304:in `pkginfo'
+I, [2016-10-14T16:41:53.536597 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:305:in `pkginfo'
+I, [2016-10-14T16:41:53.536597 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:306:in `pkginfo'
+I, [2016-10-14T16:41:53.537097 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:307:in `pkginfo'
+I, [2016-10-14T16:41:53.537097 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:308:in `pkginfo'
+I, [2016-10-14T16:41:53.537097 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:309:in `pkginfo'
+I, [2016-10-14T16:41:53.537097 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:310:in `pkginfo'
+I, [2016-10-14T16:41:53.537097 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:311:in `pkginfo'
+I, [2016-10-14T16:41:53.537097 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:312:in `pkginfo'
+I, [2016-10-14T16:41:53.537097 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:313:in `pkginfo'
+I, [2016-10-14T16:41:53.537097 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:314:in `pkginfo'
+I, [2016-10-14T16:41:53.537597 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:315:in `pkginfo'
+I, [2016-10-14T16:41:53.537597 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:316:in `pkginfo'
+I, [2016-10-14T16:41:53.537597 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:317:in `pkginfo'
+I, [2016-10-14T16:41:53.537597 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:318:in `pkginfo'
+I, [2016-10-14T16:41:53.537597 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:319:in `pkginfo'
+I, [2016-10-14T16:41:53.544598 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:320:in `pkginfo'
+I, [2016-10-14T16:41:53.544598 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:321:in `pkginfo'
+I, [2016-10-14T16:41:53.544598 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:322:in `pkginfo'
+I, [2016-10-14T16:41:53.544598 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:323:in `pkginfo'
+I, [2016-10-14T16:41:53.544598 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:324:in `pkginfo'
+I, [2016-10-14T16:41:53.544598 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:325:in `pkginfo'
+I, [2016-10-14T16:41:53.544598 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:326:in `pkginfo'
+I, [2016-10-14T16:41:53.545098 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:327:in `pkginfo'
+I, [2016-10-14T16:41:53.545098 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:328:in `pkginfo'
+I, [2016-10-14T16:41:53.545098 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:329:in `pkginfo'
+I, [2016-10-14T16:41:53.545098 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:330:in `pkginfo'
+I, [2016-10-14T16:41:53.545098 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:331:in `pkginfo'
+I, [2016-10-14T16:41:53.545098 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:332:in `pkginfo'
+I, [2016-10-14T16:41:53.545098 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:333:in `pkginfo'
+I, [2016-10-14T16:41:53.545098 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:334:in `pkginfo'
+I, [2016-10-14T16:41:53.545598 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:335:in `pkginfo'
+I, [2016-10-14T16:41:53.545598 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:336:in `pkginfo'
+I, [2016-10-14T16:41:53.545598 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:337:in `pkginfo'
+I, [2016-10-14T16:41:53.545598 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:338:in `pkginfo'
+I, [2016-10-14T16:41:53.545598 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:339:in `pkginfo'
+I, [2016-10-14T16:41:53.545598 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:340:in `pkginfo'
+I, [2016-10-14T16:41:53.545598 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:341:in `pkginfo'
+I, [2016-10-14T16:41:53.545598 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:342:in `pkginfo'
+I, [2016-10-14T16:41:53.545598 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:343:in `pkginfo'
+I, [2016-10-14T16:41:53.546098 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:344:in `pkginfo'
+I, [2016-10-14T16:41:53.546098 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:345:in `pkginfo'
+I, [2016-10-14T16:41:53.546098 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:346:in `pkginfo'
+I, [2016-10-14T16:41:53.546098 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:347:in `pkginfo'
+I, [2016-10-14T16:41:53.546098 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:348:in `pkginfo'
+I, [2016-10-14T16:41:53.546098 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:349:in `pkginfo'
+I, [2016-10-14T16:41:53.546098 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:350:in `pkginfo'
+I, [2016-10-14T16:41:53.546098 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:351:in `pkginfo'
+I, [2016-10-14T16:41:53.546098 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:352:in `pkginfo'
+I, [2016-10-14T16:41:53.546598 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:353:in `pkginfo'
+I, [2016-10-14T16:41:53.546598 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:354:in `pkginfo'
+I, [2016-10-14T16:41:53.546598 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:355:in `pkginfo'
+I, [2016-10-14T16:41:53.546598 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:356:in `pkginfo'
+I, [2016-10-14T16:41:53.546598 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:357:in `pkginfo'
+I, [2016-10-14T16:41:53.556599 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:358:in `pkginfo'
+I, [2016-10-14T16:41:53.556599 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:359:in `pkginfo'
+I, [2016-10-14T16:41:53.556599 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:360:in `pkginfo'
+I, [2016-10-14T16:41:53.556599 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:361:in `pkginfo'
+I, [2016-10-14T16:41:53.556599 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:362:in `pkginfo'
+I, [2016-10-14T16:41:53.557099 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:363:in `pkginfo'
+I, [2016-10-14T16:41:53.557099 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:364:in `pkginfo'
+I, [2016-10-14T16:41:53.557099 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:365:in `pkginfo'
+I, [2016-10-14T16:41:53.557099 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:366:in `pkginfo'
+I, [2016-10-14T16:41:53.557099 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:367:in `pkginfo'
+I, [2016-10-14T16:41:53.557099 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:368:in `pkginfo'
+I, [2016-10-14T16:41:53.557099 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:369:in `pkginfo'
+I, [2016-10-14T16:41:53.557599 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:370:in `pkginfo'
+I, [2016-10-14T16:41:53.557599 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:371:in `pkginfo'
+I, [2016-10-14T16:41:53.557599 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:372:in `pkginfo'
+I, [2016-10-14T16:41:53.557599 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:373:in `pkginfo'
+I, [2016-10-14T16:41:53.557599 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:374:in `pkginfo'
+I, [2016-10-14T16:41:53.558100 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:375:in `pkginfo'
+I, [2016-10-14T16:41:53.558100 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:376:in `pkginfo'
+I, [2016-10-14T16:41:53.558100 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:377:in `pkginfo'
+I, [2016-10-14T16:41:53.558100 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:378:in `pkginfo'
+I, [2016-10-14T16:41:53.558100 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:379:in `pkginfo'
+I, [2016-10-14T16:41:53.558100 #5760]  INFO -- default-centos-67:     - /tmp/kitchen/cache/cookbooks/mysql/libraries/helpers.rb:380:in `pkginfo'
+I, [2016-10-14T16:41:53.558100 #5760]  INFO -- default-centos-67: 
+I, [2016-10-14T16:41:53.574102 #5760]  INFO -- default-centos-67: Chef Client finished, 44/54 resources updated in 04 minutes 43 seconds
+D, [2016-10-14T16:42:00.564989 #5760] DEBUG -- default-centos-67: Cleaning up local sandbox in C:/Users/Nagaraj/AppData/Local/Temp/default-centos-67-sandbox-20161014-5760-vro80f
+I, [2016-10-14T16:42:00.817521 #5760]  INFO -- default-centos-67: Finished converging <default-centos-67> (6m33.76s).
+I, [2016-10-14T16:42:00.818521 #5760]  INFO -- default-centos-67: -----> Setting up <default-centos-67>...
+I, [2016-10-14T16:42:00.825522 #5760]  INFO -- default-centos-67: Finished setting up <default-centos-67> (0m0.00s).
+I, [2016-10-14T16:42:00.826022 #5760]  INFO -- default-centos-67: -----> Verifying <default-centos-67>...
+I, [2016-10-14T16:42:00.828523 #5760]  INFO -- default-centos-67: Preparing files for transfer
+D, [2016-10-14T16:42:00.829023 #5760] DEBUG -- default-centos-67: Creating local sandbox in C:/Users/Nagaraj/AppData/Local/Temp/default-centos-67-sandbox-20161014-5760-132wagf
+D, [2016-10-14T16:42:00.847525 #5760] DEBUG -- default-centos-67: [SSH] reusing existing connection vagrant@127.0.0.1<{:user_known_hosts_file=>"/dev/null", :paranoid=>false, :port=>"2200", :compression=>false, :compression_level=>0, :keepalive=>true, :keepalive_interval=>60, :timeout=>15, :keys_only=>true, :keys=>["C:/cygwin/home/Nagaraj/vagrant/wordpressdemo1/cookbooks/mywordpress/.kitchen/kitchen-vagrant/kitchen-mywordpress-default-centos-67/.vagrant/machines/default/virtualbox/private_key"], :auth_methods=>["publickey"], :user=>"vagrant"}>
+D, [2016-10-14T16:42:00.868528 #5760] DEBUG -- default-centos-67: [SSH] vagrant@127.0.0.1<{:user_known_hosts_file=>"/dev/null", :paranoid=>false, :port=>"2200", :compression=>false, :compression_level=>0, :keepalive=>true, :keepalive_interval=>60, :timeout=>15, :keys_only=>true, :keys=>["C:/cygwin/home/Nagaraj/vagrant/wordpressdemo1/cookbooks/mywordpress/.kitchen/kitchen-vagrant/kitchen-mywordpress-default-centos-67/.vagrant/machines/default/virtualbox/private_key"], :auth_methods=>["publickey"], :user=>"vagrant"}> (sh -c '
+TEST_KITCHEN="1"; export TEST_KITCHEN
+BUSSER_ROOT="/tmp/verifier"; export BUSSER_ROOT
+GEM_HOME="/tmp/verifier/gems"; export GEM_HOME
+GEM_PATH="/tmp/verifier/gems"; export GEM_PATH
+GEM_CACHE="/tmp/verifier/gems/cache"; export GEM_CACHE
+ruby="/opt/chef/embedded/bin/ruby"
+gem="/opt/chef/embedded/bin/gem"
+version="busser"
+gem_install_args="busser --no-rdoc --no-ri --no-format-executable -n /tmp/verifier/bin --no-user-install"
+busser="sudo -E /tmp/verifier/bin/busser"
+plugins="busser-serverspec"
+
+$gem list busser -i 2>&1 >/dev/null
+if test $? -ne 0; then
+  echo "-----> Installing Busser ($version)"
+  $gem install $gem_install_args
+else
+  echo "-----> Busser installation detected ($version)"
+fi
+
+if test ! -f "$BUSSER_ROOT/bin/busser"; then
+  $busser setup
+fi
+
+echo "       Installing Busser plugins: $plugins"
+$busser plugin install $plugins
+')
+I, [2016-10-14T16:42:02.637752 #5760]  INFO -- default-centos-67: -----> Installing Busser (busser)
+I, [2016-10-14T16:42:06.446736 #5760]  INFO -- default-centos-67: Fetching: thor-0.19.0.gemFetching: thor-0.19.0.gem (  3%)Fetching: thor-0.19.0.gem (  6%)Fetching: thor-0.19.0.gem (  9%)Fetching: thor-0.19.0.gem ( 12%)Fetching: thor-0.19.0.gem ( 15%)Fetching: thor-0.19.0.gem ( 18%)Fetching: thor-0.19.0.gem ( 21%)Fetching: thor-0.19.0.gem ( 24%)Fetching: thor-0.19.0.gem ( 27%)Fetching: thor-0.19.0.gem ( 30%)Fetching: thor-0.19.0.gem ( 33%)Fetching: thor-0.19.0.gem ( 36%)Fetching: thor-0.19.0.gem ( 53%)Fetching: thor-0.19.0.gem ( 71%)Fetching: thor-0.19.0.gem ( 89%)Fetching: thor-0.19.0.gem (100%)Fetching: thor-0.19.0.gem (100%)
+I, [2016-10-14T16:42:06.598755 #5760]  INFO -- default-centos-67: Successfully installed thor-0.19.0
+I, [2016-10-14T16:42:07.622385 #5760]  INFO -- default-centos-67: Fetching: busser-0.7.1.gemFetching: busser-0.7.1.gem (  9%)Fetching: busser-0.7.1.gem ( 20%)Fetching: busser-0.7.1.gem ( 31%)Fetching: busser-0.7.1.gem ( 43%)Fetching: busser-0.7.1.gem ( 54%)Fetching: busser-0.7.1.gem ( 64%)Fetching: busser-0.7.1.gem ( 76%)Fetching: busser-0.7.1.gem ( 87%)Fetching: busser-0.7.1.gem ( 98%)Fetching: busser-0.7.1.gem (100%)Fetching: busser-0.7.1.gem (100%)
+I, [2016-10-14T16:42:07.683893 #5760]  INFO -- default-centos-67: Successfully installed busser-0.7.1
+I, [2016-10-14T16:42:07.683893 #5760]  INFO -- default-centos-67: 2 gems installed
+I, [2016-10-14T16:42:07.698395 #5760]  INFO -- default-centos-67: Installing Busser plugins: busser-serverspec
+I, [2016-10-14T16:42:12.141959 #5760]  INFO -- default-centos-67: Plugin serverspec installed (version 0.5.10)
+I, [2016-10-14T16:42:12.152961 #5760]  INFO -- default-centos-67: -----> Running postinstall for serverspec plugin
+D, [2016-10-14T16:42:12.918558 #5760] DEBUG -- default-centos-67: [SSH] vagrant@127.0.0.1<{:user_known_hosts_file=>"/dev/null", :paranoid=>false, :port=>"2200", :compression=>false, :compression_level=>0, :keepalive=>true, :keepalive_interval=>60, :timeout=>15, :keys_only=>true, :keys=>["C:/cygwin/home/Nagaraj/vagrant/wordpressdemo1/cookbooks/mywordpress/.kitchen/kitchen-vagrant/kitchen-mywordpress-default-centos-67/.vagrant/machines/default/virtualbox/private_key"], :auth_methods=>["publickey"], :user=>"vagrant"}> (sh -c '
+TEST_KITCHEN="1"; export TEST_KITCHEN
+BUSSER_ROOT="/tmp/verifier"; export BUSSER_ROOT
+GEM_HOME="/tmp/verifier/gems"; export GEM_HOME
+GEM_PATH="/tmp/verifier/gems"; export GEM_PATH
+GEM_CACHE="/tmp/verifier/gems/cache"; export GEM_CACHE
+
+sudo -E /tmp/verifier/bin/busser suite cleanup
+')
+I, [2016-10-14T16:42:13.170090 #5760]  INFO -- default-centos-67: Suite path directory /tmp/verifier/suites does not exist, skipping.
+I, [2016-10-14T16:42:13.181591 #5760]  INFO -- default-centos-67: Transferring files to <default-centos-67>
+D, [2016-10-14T16:42:13.182091 #5760] DEBUG -- default-centos-67: TIMING: scp async upload (Kitchen::Transport::Ssh)
+D, [2016-10-14T16:42:13.365615 #5760] DEBUG -- default-centos-67: TIMING: scp async upload (Kitchen::Transport::Ssh) took (0m0.18s)
+D, [2016-10-14T16:42:13.367115 #5760] DEBUG -- default-centos-67: Transfer complete
+D, [2016-10-14T16:42:13.377116 #5760] DEBUG -- default-centos-67: [SSH] vagrant@127.0.0.1<{:user_known_hosts_file=>"/dev/null", :paranoid=>false, :port=>"2200", :compression=>false, :compression_level=>0, :keepalive=>true, :keepalive_interval=>60, :timeout=>15, :keys_only=>true, :keys=>["C:/cygwin/home/Nagaraj/vagrant/wordpressdemo1/cookbooks/mywordpress/.kitchen/kitchen-vagrant/kitchen-mywordpress-default-centos-67/.vagrant/machines/default/virtualbox/private_key"], :auth_methods=>["publickey"], :user=>"vagrant"}> (sh -c '
+TEST_KITCHEN="1"; export TEST_KITCHEN
+BUSSER_ROOT="/tmp/verifier"; export BUSSER_ROOT
+GEM_HOME="/tmp/verifier/gems"; export GEM_HOME
+GEM_PATH="/tmp/verifier/gems"; export GEM_PATH
+GEM_CACHE="/tmp/verifier/gems/cache"; export GEM_CACHE
+
+sudo -E /tmp/verifier/bin/busser test
+')
+I, [2016-10-14T16:42:13.664153 #5760]  INFO -- default-centos-67: -----> Running serverspec test suite
+I, [2016-10-14T16:42:13.675154 #5760]  INFO -- default-centos-67: -----> Installing Serverspec..
+I, [2016-10-14T16:42:17.343120 #5760]  INFO -- default-centos-67: Fetching: diff-lcs-1.2.5.gemFetching: diff-lcs-1.2.5.gem (  5%)Fetching: diff-lcs-1.2.5.gem ( 10%)Fetching: diff-lcs-1.2.5.gem ( 16%)Fetching: diff-lcs-1.2.5.gem ( 22%)Fetching: diff-lcs-1.2.5.gem ( 27%)Fetching: diff-lcs-1.2.5.gem ( 32%)Fetching: diff-lcs-1.2.5.gem ( 38%)Fetching: diff-lcs-1.2.5.gem ( 44%)Fetching: diff-lcs-1.2.5.gem ( 49%)Fetching: diff-lcs-1.2.5.gem ( 55%)Fetching: diff-lcs-1.2.5.gem ( 61%)Fetching: diff-lcs-1.2.5.gem ( 66%)Fetching: diff-lcs-1.2.5.gem ( 99%)Fetching: diff-lcs-1.2.5.gem (100%)Fetching: diff-lcs-1.2.5.gem (100%)
+I, [2016-10-14T16:42:18.240734 #5760]  INFO -- default-centos-67: Fetching: rspec-expectations-3.5.0.gemFetching: rspec-expectations-3.5.0.gem ( 21%)Fetching: rspec-expectations-3.5.0.gem ( 42%)Fetching: rspec-expectations-3.5.0.gem ( 63%)Fetching: rspec-expectations-3.5.0.gem ( 84%)Fetching: rspec-expectations-3.5.0.gem (100%)Fetching: rspec-expectations-3.5.0.gem (100%)
+I, [2016-10-14T16:42:18.865313 #5760]  INFO -- default-centos-67: Fetching: rspec-mocks-3.5.0.gemFetching: rspec-mocks-3.5.0.gem ( 21%)Fetching: rspec-mocks-3.5.0.gem ( 42%)Fetching: rspec-mocks-3.5.0.gem ( 64%)Fetching: rspec-mocks-3.5.0.gem ( 85%)Fetching: rspec-mocks-3.5.0.gem (100%)Fetching: rspec-mocks-3.5.0.gem (100%)
+I, [2016-10-14T16:42:19.526397 #5760]  INFO -- default-centos-67: Fetching: rspec-3.5.0.gemFetching: rspec-3.5.0.gem (100%)Fetching: rspec-3.5.0.gem (100%)
+I, [2016-10-14T16:42:20.256490 #5760]  INFO -- default-centos-67: Fetching: rspec-its-1.2.0.gemFetching: rspec-its-1.2.0.gem (100%)Fetching: rspec-its-1.2.0.gem (100%)
+I, [2016-10-14T16:42:20.918074 #5760]  INFO -- default-centos-67: Fetching: multi_json-1.12.1.gemFetching: multi_json-1.12.1.gem ( 61%)Fetching: multi_json-1.12.1.gem (100%)Fetching: multi_json-1.12.1.gem (100%)
+I, [2016-10-14T16:42:21.841191 #5760]  INFO -- default-centos-67: Fetching: net-ssh-3.2.0.gemFetching: net-ssh-3.2.0.gem (  9%)Fetching: net-ssh-3.2.0.gem ( 18%)Fetching: net-ssh-3.2.0.gem ( 27%)Fetching: net-ssh-3.2.0.gem ( 35%)Fetching: net-ssh-3.2.0.gem ( 44%)Fetching: net-ssh-3.2.0.gem ( 53%)Fetching: net-ssh-3.2.0.gem ( 62%)Fetching: net-ssh-3.2.0.gem ( 71%)Fetching: net-ssh-3.2.0.gem ( 80%)Fetching: net-ssh-3.2.0.gem ( 89%)Fetching: net-ssh-3.2.0.gem ( 97%)Fetching: net-ssh-3.2.0.gem (100%)Fetching: net-ssh-3.2.0.gem (100%)
+I, [2016-10-14T16:42:23.742933 #5760]  INFO -- default-centos-67: Fetching: net-scp-1.2.1.gemFetching: net-scp-1.2.1.gem (  7%)Fetching: net-scp-1.2.1.gem ( 15%)Fetching: net-scp-1.2.1.gem ( 24%)Fetching: net-scp-1.2.1.gem ( 32%)Fetching: net-scp-1.2.1.gem ( 40%)Fetching: net-scp-1.2.1.gem ( 48%)Fetching: net-scp-1.2.1.gem ( 57%)Fetching: net-scp-1.2.1.gem ( 65%)Fetching: net-scp-1.2.1.gem ( 74%)Fetching: net-scp-1.2.1.gem ( 82%)Fetching: net-scp-1.2.1.gem ( 90%)Fetching: net-scp-1.2.1.gem ( 98%)Fetching: net-scp-1.2.1.gem (100%)Fetching: net-scp-1.2.1.gem (100%)
+I, [2016-10-14T16:42:24.366512 #5760]  INFO -- default-centos-67: Fetching: net-telnet-0.1.1.gemFetching: net-telnet-0.1.1.gem ( 13%)Fetching: net-telnet-0.1.1.gem ( 29%)Fetching: net-telnet-0.1.1.gem ( 45%)Fetching: net-telnet-0.1.1.gem ( 62%)Fetching: net-telnet-0.1.1.gem ( 78%)Fetching: net-telnet-0.1.1.gem ( 93%)Fetching: net-telnet-0.1.1.gem (100%)Fetching: net-telnet-0.1.1.gem (100%)
+I, [2016-10-14T16:42:24.729558 #5760]  INFO -- default-centos-67: Fetching: sfl-2.3.gemFetching: sfl-2.3.gem ( 20%)Fetching: sfl-2.3.gem ( 47%)Fetching: sfl-2.3.gem ( 74%)Fetching: sfl-2.3.gem (100%)Fetching: sfl-2.3.gem (100%)
+I, [2016-10-14T16:42:25.197117 #5760]  INFO -- default-centos-67: Fetching: specinfra-2.63.3.gemFetching: specinfra-2.63.3.gem (  3%)Fetching: specinfra-2.63.3.gem (  6%)Fetching: specinfra-2.63.3.gem ( 10%)Fetching: specinfra-2.63.3.gem ( 13%)Fetching: specinfra-2.63.3.gem ( 16%)Fetching: specinfra-2.63.3.gem ( 19%)Fetching: specinfra-2.63.3.gem ( 23%)Fetching: specinfra-2.63.3.gem ( 26%)Fetching: specinfra-2.63.3.gem ( 29%)Fetching: specinfra-2.63.3.gem ( 33%)Fetching: specinfra-2.63.3.gem ( 36%)Fetching: specinfra-2.63.3.gem ( 39%)Fetching: specinfra-2.63.3.gem ( 59%)Fetching: specinfra-2.63.3.gem ( 79%)Fetching: specinfra-2.63.3.gem ( 98%)Fetching: specinfra-2.63.3.gem (100%)Fetching: specinfra-2.63.3.gem (100%)
+I, [2016-10-14T16:42:25.613170 #5760]  INFO -- default-centos-67: Fetching: serverspec-2.37.2.gemFetching: serverspec-2.37.2.gem (  8%)Fetching: serverspec-2.37.2.gem ( 15%)Fetching: serverspec-2.37.2.gem ( 18%)Fetching: serverspec-2.37.2.gem ( 26%)Fetching: serverspec-2.37.2.gem ( 29%)Fetching: serverspec-2.37.2.gem ( 36%)Fetching: serverspec-2.37.2.gem ( 40%)Fetching: serverspec-2.37.2.gem ( 47%)Fetching: serverspec-2.37.2.gem ( 50%)Fetching: serverspec-2.37.2.gem ( 57%)Fetching: serverspec-2.37.2.gem ( 61%)Fetching: serverspec-2.37.2.gem ( 68%)Fetching: serverspec-2.37.2.gem ( 71%)Fetching: serverspec-2.37.2.gem ( 78%)Fetching: serverspec-2.37.2.gem ( 82%)Fetching: serverspec-2.37.2.gem ( 89%)Fetching: serverspec-2.37.2.gem ( 92%)Fetching: serverspec-2.37.2.gem ( 99%)Fetching: serverspec-2.37.2.gem (100%)Fetching: serverspec-2.37.2.gem (100%)
+I, [2016-10-14T16:42:25.735185 #5760]  INFO -- default-centos-67: -----> serverspec installed (version 2.37.2)
+I, [2016-10-14T16:42:26.296757 #5760]  INFO -- default-centos-67: /opt/chef/embedded/bin/ruby -I/tmp/verifier/suites/serverspec -I/tmp/verifier/gems/gems/rspec-support-3.5.0/lib:/tmp/verifier/gems/gems/rspec-core-3.5.4/lib /opt/chef/embedded/bin/rspec --pattern /tmp/verifier/suites/serverspec/\*\*/\*_spec.rb --color --format documentation --default-path /tmp/verifier/suites/serverspec
+I, [2016-10-14T16:42:26.737813 #5760]  INFO -- default-centos-67: /tmp/verifier/gems/gems/rspec-core-3.5.4/lib/rspec/core/configuration.rb:1435:in `load': /tmp/verifier/suites/serverspec/apache_spec.rb:5: syntax error, unexpected keyword_end, expecting end-of-input (SyntaxError)
+I, [2016-10-14T16:42:26.737813 #5760]  INFO -- default-centos-67: 	from /tmp/verifier/gems/gems/rspec-core-3.5.4/lib/rspec/core/configuration.rb:1435:in `block in load_spec_files'
+I, [2016-10-14T16:42:26.738313 #5760]  INFO -- default-centos-67: 	from /tmp/verifier/gems/gems/rspec-core-3.5.4/lib/rspec/core/configuration.rb:1433:in `each'
+I, [2016-10-14T16:42:26.738313 #5760]  INFO -- default-centos-67: 	from /tmp/verifier/gems/gems/rspec-core-3.5.4/lib/rspec/core/configuration.rb:1433:in `load_spec_files'
+I, [2016-10-14T16:42:26.738813 #5760]  INFO -- default-centos-67: 	from /tmp/verifier/gems/gems/rspec-core-3.5.4/lib/rspec/core/runner.rb:100:in `setup'
+I, [2016-10-14T16:42:26.738813 #5760]  INFO -- default-centos-67: 	from /tmp/verifier/gems/gems/rspec-core-3.5.4/lib/rspec/core/runner.rb:86:in `run'
+I, [2016-10-14T16:42:26.738813 #5760]  INFO -- default-centos-67: 	from /tmp/verifier/gems/gems/rspec-core-3.5.4/lib/rspec/core/runner.rb:71:in `run'
+I, [2016-10-14T16:42:26.739313 #5760]  INFO -- default-centos-67: 	from /tmp/verifier/gems/gems/rspec-core-3.5.4/lib/rspec/core/runner.rb:45:in `invoke'
+I, [2016-10-14T16:42:26.739313 #5760]  INFO -- default-centos-67: 	from /tmp/verifier/gems/gems/rspec-core-3.5.4/exe/rspec:4:in `<top (required)>'
+I, [2016-10-14T16:42:26.739313 #5760]  INFO -- default-centos-67: 	from /opt/chef/embedded/bin/rspec:22:in `load'
+I, [2016-10-14T16:42:26.756315 #5760]  INFO -- default-centos-67: 	from /opt/chef/embedded/bin/rspec:22:in `<main>'
+I, [2016-10-14T16:42:26.758315 #5760]  INFO -- default-centos-67: /opt/chef/embedded/bin/ruby -I/tmp/verifier/suites/serverspec -I/tmp/verifier/gems/gems/rspec-support-3.5.0/lib:/tmp/verifier/gems/gems/rspec-core-3.5.4/lib /opt/chef/embedded/bin/rspec --pattern /tmp/verifier/suites/serverspec/\*\*/\*_spec.rb --color --format documentation --default-path /tmp/verifier/suites/serverspec failed
+I, [2016-10-14T16:42:26.772317 #5760]  INFO -- default-centos-67: !!!!!! Ruby Script [/tmp/verifier/gems/gems/busser-serverspec-0.5.10/lib/busser/runner_plugin/../serverspec/runner.rb /tmp/verifier/suites/serverspec] exit code was 1
+D, [2016-10-14T16:42:26.792820 #5760] DEBUG -- default-centos-67: Cleaning up local sandbox in C:/Users/Nagaraj/AppData/Local/Temp/default-centos-67-sandbox-20161014-5760-132wagf
+E, [2016-10-14T16:42:26.799321 #5760] ERROR -- default-centos-67: Verify failed on instance <default-centos-67>.
+E, [2016-10-14T16:42:26.799821 #5760] ERROR -- default-centos-67: ------Exception-------
+E, [2016-10-14T16:42:26.799821 #5760] ERROR -- default-centos-67: Class: Kitchen::ActionFailed
+E, [2016-10-14T16:42:26.799821 #5760] ERROR -- default-centos-67: Message: SSH exited (1) for command: [sh -c '
+TEST_KITCHEN="1"; export TEST_KITCHEN
+BUSSER_ROOT="/tmp/verifier"; export BUSSER_ROOT
+GEM_HOME="/tmp/verifier/gems"; export GEM_HOME
+GEM_PATH="/tmp/verifier/gems"; export GEM_PATH
+GEM_CACHE="/tmp/verifier/gems/cache"; export GEM_CACHE
+
+sudo -E /tmp/verifier/bin/busser test
+']
+E, [2016-10-14T16:42:26.800321 #5760] ERROR -- default-centos-67: ----------------------
+E, [2016-10-14T16:42:26.800321 #5760] ERROR -- default-centos-67: ------Backtrace-------
+E, [2016-10-14T16:42:26.800321 #5760] ERROR -- default-centos-67: C:/Users/Nagaraj/AppData/Local/chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/verifier/base.rb:83:in `rescue in call'
+E, [2016-10-14T16:42:26.800321 #5760] ERROR -- default-centos-67: C:/Users/Nagaraj/AppData/Local/chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/verifier/base.rb:86:in `call'
+E, [2016-10-14T16:42:26.800821 #5760] ERROR -- default-centos-67: C:/Users/Nagaraj/AppData/Local/chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:430:in `block in verify_action'
+E, [2016-10-14T16:42:26.800821 #5760] ERROR -- default-centos-67: C:/Users/Nagaraj/AppData/Local/chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:520:in `synchronize_or_call'
+E, [2016-10-14T16:42:26.800821 #5760] ERROR -- default-centos-67: C:/Users/Nagaraj/AppData/Local/chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:485:in `block in action'
+E, [2016-10-14T16:42:26.800821 #5760] ERROR -- default-centos-67: C:/opscode/chefdk/embedded/lib/ruby/2.3.0/benchmark.rb:293:in `measure'
+E, [2016-10-14T16:42:26.800821 #5760] ERROR -- default-centos-67: C:/Users/Nagaraj/AppData/Local/chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:484:in `action'
+E, [2016-10-14T16:42:26.801321 #5760] ERROR -- default-centos-67: C:/Users/Nagaraj/AppData/Local/chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:422:in `verify_action'
+E, [2016-10-14T16:42:26.801321 #5760] ERROR -- default-centos-67: C:/Users/Nagaraj/AppData/Local/chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:355:in `block in transition_to'
+E, [2016-10-14T16:42:26.801321 #5760] ERROR -- default-centos-67: C:/Users/Nagaraj/AppData/Local/chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:354:in `each'
+E, [2016-10-14T16:42:26.801321 #5760] ERROR -- default-centos-67: C:/Users/Nagaraj/AppData/Local/chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:354:in `transition_to'
+E, [2016-10-14T16:42:26.801821 #5760] ERROR -- default-centos-67: C:/Users/Nagaraj/AppData/Local/chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:160:in `verify'
+E, [2016-10-14T16:42:26.801821 #5760] ERROR -- default-centos-67: C:/Users/Nagaraj/AppData/Local/chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:189:in `block in test'
+E, [2016-10-14T16:42:26.801821 #5760] ERROR -- default-centos-67: C:/opscode/chefdk/embedded/lib/ruby/2.3.0/benchmark.rb:293:in `measure'
+E, [2016-10-14T16:42:26.801821 #5760] ERROR -- default-centos-67: C:/Users/Nagaraj/AppData/Local/chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:185:in `test'
+E, [2016-10-14T16:42:26.801821 #5760] ERROR -- default-centos-67: C:/Users/Nagaraj/AppData/Local/chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/command.rb:201:in `public_send'
+E, [2016-10-14T16:42:26.802321 #5760] ERROR -- default-centos-67: C:/Users/Nagaraj/AppData/Local/chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/command.rb:201:in `run_action_in_thread'
+E, [2016-10-14T16:42:26.802321 #5760] ERROR -- default-centos-67: C:/Users/Nagaraj/AppData/Local/chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/command.rb:173:in `block (2 levels) in run_action'
+E, [2016-10-14T16:42:26.802321 #5760] ERROR -- default-centos-67: ----End Backtrace-----
+E, [2016-10-14T16:42:26.802321 #5760] ERROR -- default-centos-67: ---Nested Exception---
+E, [2016-10-14T16:42:26.802821 #5760] ERROR -- default-centos-67: Class: Kitchen::Transport::SshFailed
+E, [2016-10-14T16:42:26.802821 #5760] ERROR -- default-centos-67: Message: SSH exited (1) for command: [sh -c '
+TEST_KITCHEN="1"; export TEST_KITCHEN
+BUSSER_ROOT="/tmp/verifier"; export BUSSER_ROOT
+GEM_HOME="/tmp/verifier/gems"; export GEM_HOME
+GEM_PATH="/tmp/verifier/gems"; export GEM_PATH
+GEM_CACHE="/tmp/verifier/gems/cache"; export GEM_CACHE
+
+sudo -E /tmp/verifier/bin/busser test
+']
+E, [2016-10-14T16:42:26.802821 #5760] ERROR -- default-centos-67: ----------------------
+E, [2016-10-14T16:42:26.802821 #5760] ERROR -- default-centos-67: ------Backtrace-------
+E, [2016-10-14T16:42:26.802821 #5760] ERROR -- default-centos-67: C:/Users/Nagaraj/AppData/Local/chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/verifier/base.rb:83:in `rescue in call'
+E, [2016-10-14T16:42:26.802821 #5760] ERROR -- default-centos-67: C:/Users/Nagaraj/AppData/Local/chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/verifier/base.rb:86:in `call'
+E, [2016-10-14T16:42:26.803321 #5760] ERROR -- default-centos-67: C:/Users/Nagaraj/AppData/Local/chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:430:in `block in verify_action'
+E, [2016-10-14T16:42:26.803321 #5760] ERROR -- default-centos-67: C:/Users/Nagaraj/AppData/Local/chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:520:in `synchronize_or_call'
+E, [2016-10-14T16:42:26.803321 #5760] ERROR -- default-centos-67: C:/Users/Nagaraj/AppData/Local/chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:485:in `block in action'
+E, [2016-10-14T16:42:26.803321 #5760] ERROR -- default-centos-67: C:/opscode/chefdk/embedded/lib/ruby/2.3.0/benchmark.rb:293:in `measure'
+E, [2016-10-14T16:42:26.803321 #5760] ERROR -- default-centos-67: C:/Users/Nagaraj/AppData/Local/chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:484:in `action'
+E, [2016-10-14T16:42:26.803321 #5760] ERROR -- default-centos-67: C:/Users/Nagaraj/AppData/Local/chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:422:in `verify_action'
+E, [2016-10-14T16:42:26.803321 #5760] ERROR -- default-centos-67: C:/Users/Nagaraj/AppData/Local/chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:355:in `block in transition_to'
+E, [2016-10-14T16:42:26.803321 #5760] ERROR -- default-centos-67: C:/Users/Nagaraj/AppData/Local/chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:354:in `each'
+E, [2016-10-14T16:42:26.803321 #5760] ERROR -- default-centos-67: C:/Users/Nagaraj/AppData/Local/chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:354:in `transition_to'
+E, [2016-10-14T16:42:26.803321 #5760] ERROR -- default-centos-67: C:/Users/Nagaraj/AppData/Local/chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:160:in `verify'
+E, [2016-10-14T16:42:26.803821 #5760] ERROR -- default-centos-67: C:/Users/Nagaraj/AppData/Local/chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:189:in `block in test'
+E, [2016-10-14T16:42:26.803821 #5760] ERROR -- default-centos-67: C:/opscode/chefdk/embedded/lib/ruby/2.3.0/benchmark.rb:293:in `measure'
+E, [2016-10-14T16:42:26.803821 #5760] ERROR -- default-centos-67: C:/Users/Nagaraj/AppData/Local/chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:185:in `test'
+E, [2016-10-14T16:42:26.803821 #5760] ERROR -- default-centos-67: C:/Users/Nagaraj/AppData/Local/chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/command.rb:201:in `public_send'
+E, [2016-10-14T16:42:26.803821 #5760] ERROR -- default-centos-67: C:/Users/Nagaraj/AppData/Local/chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/command.rb:201:in `run_action_in_thread'
+E, [2016-10-14T16:42:26.803821 #5760] ERROR -- default-centos-67: C:/Users/Nagaraj/AppData/Local/chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/command.rb:173:in `block (2 levels) in run_action'
+E, [2016-10-14T16:42:26.803821 #5760] ERROR -- default-centos-67: ----End Backtrace-----
+D, [2016-10-14T16:42:26.805821 #5760] DEBUG -- default-centos-67: [SSH] shutting previous connection vagrant@127.0.0.1<{:user_known_hosts_file=>"/dev/null", :paranoid=>false, :port=>"2200", :compression=>false, :compression_level=>0, :keepalive=>true, :keepalive_interval=>60, :timeout=>15, :keys_only=>true, :keys=>["C:/cygwin/home/Nagaraj/vagrant/wordpressdemo1/cookbooks/mywordpress/.kitchen/kitchen-vagrant/kitchen-mywordpress-default-centos-67/.vagrant/machines/default/virtualbox/private_key"], :auth_methods=>["publickey"], :user=>"vagrant"}>
+D, [2016-10-14T16:42:26.806822 #5760] DEBUG -- default-centos-67: [SSH] closing connection to vagrant@127.0.0.1<{:user_known_hosts_file=>"/dev/null", :paranoid=>false, :port=>"2200", :compression=>false, :compression_level=>0, :keepalive=>true, :keepalive_interval=>60, :timeout=>15, :keys_only=>true, :keys=>["C:/cygwin/home/Nagaraj/vagrant/wordpressdemo1/cookbooks/mywordpress/.kitchen/kitchen-vagrant/kitchen-mywordpress-default-centos-67/.vagrant/machines/default/virtualbox/private_key"], :auth_methods=>["publickey"], :user=>"vagrant"}>

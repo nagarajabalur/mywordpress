@@ -5,3 +5,86 @@ I, [2016-10-14T16:26:57.960373 #5760]  INFO -- Kitchen: -----> Cleaning up any p
 I, [2016-10-14T16:26:57.961873 #5760]  INFO -- Kitchen: -----> Destroying <default-centos-67>...
 I, [2016-10-14T16:27:53.334905 #5760]  INFO -- Kitchen: -----> Testing <default-centos-67>
 I, [2016-10-14T16:27:53.335405 #5760]  INFO -- Kitchen: -----> Creating <default-centos-67>...
+I, [2016-10-14T16:35:27.045019 #5760]  INFO -- Kitchen: -----> Converging <default-centos-67>...
+I, [2016-10-14T16:42:00.818021 #5760]  INFO -- Kitchen: -----> Setting up <default-centos-67>...
+I, [2016-10-14T16:42:00.826022 #5760]  INFO -- Kitchen: -----> Verifying <default-centos-67>...
+D, [2016-10-14T16:42:26.874330 #5760] DEBUG -- Kitchen: ------Exception-------
+D, [2016-10-14T16:42:26.875330 #5760] DEBUG -- Kitchen: Class: Kitchen::ActionFailed
+D, [2016-10-14T16:42:26.875830 #5760] DEBUG -- Kitchen: Message: 1 actions failed.
+>>>>>>     Verify failed on instance <default-centos-67>.  Please see .kitchen/logs/default-centos-67.log for more details
+D, [2016-10-14T16:42:26.876330 #5760] DEBUG -- Kitchen: ----------------------
+D, [2016-10-14T16:42:26.877331 #5760] DEBUG -- Kitchen: ------Backtrace-------
+D, [2016-10-14T16:42:26.877831 #5760] DEBUG -- Kitchen: C:/Users/Nagaraj/AppData/Local/chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/command.rb:187:in `report_errors'
+D, [2016-10-14T16:42:26.878331 #5760] DEBUG -- Kitchen: C:/Users/Nagaraj/AppData/Local/chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/command.rb:178:in `run_action'
+D, [2016-10-14T16:42:26.878831 #5760] DEBUG -- Kitchen: C:/Users/Nagaraj/AppData/Local/chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/command/test.rb:45:in `block in call'
+D, [2016-10-14T16:42:26.879331 #5760] DEBUG -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/2.3.0/benchmark.rb:293:in `measure'
+D, [2016-10-14T16:42:26.879831 #5760] DEBUG -- Kitchen: C:/Users/Nagaraj/AppData/Local/chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/command/test.rb:41:in `call'
+D, [2016-10-14T16:42:26.880331 #5760] DEBUG -- Kitchen: C:/Users/Nagaraj/AppData/Local/chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/cli.rb:56:in `perform'
+D, [2016-10-14T16:42:26.880831 #5760] DEBUG -- Kitchen: C:/Users/Nagaraj/AppData/Local/chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/cli.rb:233:in `test'
+D, [2016-10-14T16:42:26.881331 #5760] DEBUG -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/thor-0.19.1/lib/thor/command.rb:27:in `run'
+D, [2016-10-14T16:42:26.881831 #5760] DEBUG -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/thor-0.19.1/lib/thor/invocation.rb:126:in `invoke_command'
+D, [2016-10-14T16:42:26.882831 #5760] DEBUG -- Kitchen: C:/Users/Nagaraj/AppData/Local/chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/cli.rb:334:in `invoke_task'
+D, [2016-10-14T16:42:26.883331 #5760] DEBUG -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/thor-0.19.1/lib/thor.rb:359:in `dispatch'
+D, [2016-10-14T16:42:26.883831 #5760] DEBUG -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/thor-0.19.1/lib/thor/base.rb:440:in `start'
+D, [2016-10-14T16:42:26.884331 #5760] DEBUG -- Kitchen: C:/Users/Nagaraj/AppData/Local/chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.13.2/bin/kitchen:13:in `block in <top (required)>'
+D, [2016-10-14T16:42:26.884831 #5760] DEBUG -- Kitchen: C:/Users/Nagaraj/AppData/Local/chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/errors.rb:174:in `with_friendly_errors'
+D, [2016-10-14T16:42:26.885332 #5760] DEBUG -- Kitchen: C:/Users/Nagaraj/AppData/Local/chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.13.2/bin/kitchen:13:in `<top (required)>'
+D, [2016-10-14T16:42:26.885832 #5760] DEBUG -- Kitchen: C:/opscode/chefdk/bin/kitchen:24:in `load'
+D, [2016-10-14T16:42:26.886332 #5760] DEBUG -- Kitchen: C:/opscode/chefdk/bin/kitchen:24:in `<main>'
+D, [2016-10-14T16:42:26.886832 #5760] DEBUG -- Kitchen: ----End Backtrace-----
+D, [2016-10-14T16:42:26.887332 #5760] DEBUG -- Kitchen: -Composite Exception--
+D, [2016-10-14T16:42:26.887832 #5760] DEBUG -- Kitchen: Class: Kitchen::InstanceFailure
+D, [2016-10-14T16:42:26.888332 #5760] DEBUG -- Kitchen: Message: Verify failed on instance <default-centos-67>.  Please see .kitchen/logs/default-centos-67.log for more details
+D, [2016-10-14T16:42:26.889332 #5760] DEBUG -- Kitchen: ----------------------
+D, [2016-10-14T16:42:26.889832 #5760] DEBUG -- Kitchen: ------Backtrace-------
+D, [2016-10-14T16:42:26.890332 #5760] DEBUG -- Kitchen: C:/Users/Nagaraj/AppData/Local/chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/verifier/base.rb:83:in `rescue in call'
+D, [2016-10-14T16:42:26.890832 #5760] DEBUG -- Kitchen: C:/Users/Nagaraj/AppData/Local/chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/verifier/base.rb:86:in `call'
+D, [2016-10-14T16:42:26.891832 #5760] DEBUG -- Kitchen: C:/Users/Nagaraj/AppData/Local/chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:430:in `block in verify_action'
+D, [2016-10-14T16:42:26.892332 #5760] DEBUG -- Kitchen: C:/Users/Nagaraj/AppData/Local/chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:520:in `synchronize_or_call'
+D, [2016-10-14T16:42:26.893333 #5760] DEBUG -- Kitchen: C:/Users/Nagaraj/AppData/Local/chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:485:in `block in action'
+D, [2016-10-14T16:42:26.893833 #5760] DEBUG -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/2.3.0/benchmark.rb:293:in `measure'
+D, [2016-10-14T16:42:26.894833 #5760] DEBUG -- Kitchen: C:/Users/Nagaraj/AppData/Local/chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:484:in `action'
+D, [2016-10-14T16:42:26.895833 #5760] DEBUG -- Kitchen: C:/Users/Nagaraj/AppData/Local/chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:422:in `verify_action'
+D, [2016-10-14T16:42:26.896333 #5760] DEBUG -- Kitchen: C:/Users/Nagaraj/AppData/Local/chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:355:in `block in transition_to'
+D, [2016-10-14T16:42:26.897333 #5760] DEBUG -- Kitchen: C:/Users/Nagaraj/AppData/Local/chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:354:in `each'
+D, [2016-10-14T16:42:26.897833 #5760] DEBUG -- Kitchen: C:/Users/Nagaraj/AppData/Local/chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:354:in `transition_to'
+D, [2016-10-14T16:42:26.898833 #5760] DEBUG -- Kitchen: C:/Users/Nagaraj/AppData/Local/chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:160:in `verify'
+D, [2016-10-14T16:42:26.899833 #5760] DEBUG -- Kitchen: C:/Users/Nagaraj/AppData/Local/chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:189:in `block in test'
+D, [2016-10-14T16:42:26.900333 #5760] DEBUG -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/2.3.0/benchmark.rb:293:in `measure'
+D, [2016-10-14T16:42:26.901334 #5760] DEBUG -- Kitchen: C:/Users/Nagaraj/AppData/Local/chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:185:in `test'
+D, [2016-10-14T16:42:26.902334 #5760] DEBUG -- Kitchen: C:/Users/Nagaraj/AppData/Local/chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/command.rb:201:in `public_send'
+D, [2016-10-14T16:42:26.902834 #5760] DEBUG -- Kitchen: C:/Users/Nagaraj/AppData/Local/chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/command.rb:201:in `run_action_in_thread'
+D, [2016-10-14T16:42:26.903834 #5760] DEBUG -- Kitchen: C:/Users/Nagaraj/AppData/Local/chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/command.rb:173:in `block (2 levels) in run_action'
+D, [2016-10-14T16:42:26.904834 #5760] DEBUG -- Kitchen: ----End Backtrace-----
+D, [2016-10-14T16:42:26.905334 #5760] DEBUG -- Kitchen: ---Nested Exception---
+D, [2016-10-14T16:42:26.905834 #5760] DEBUG -- Kitchen: Class: Kitchen::ActionFailed
+D, [2016-10-14T16:42:26.906334 #5760] DEBUG -- Kitchen: Message: SSH exited (1) for command: [sh -c '
+TEST_KITCHEN="1"; export TEST_KITCHEN
+BUSSER_ROOT="/tmp/verifier"; export BUSSER_ROOT
+GEM_HOME="/tmp/verifier/gems"; export GEM_HOME
+GEM_PATH="/tmp/verifier/gems"; export GEM_PATH
+GEM_CACHE="/tmp/verifier/gems/cache"; export GEM_CACHE
+
+sudo -E /tmp/verifier/bin/busser test
+']
+D, [2016-10-14T16:42:26.907334 #5760] DEBUG -- Kitchen: ----------------------
+D, [2016-10-14T16:42:26.908334 #5760] DEBUG -- Kitchen: ------Backtrace-------
+D, [2016-10-14T16:42:26.908835 #5760] DEBUG -- Kitchen: C:/Users/Nagaraj/AppData/Local/chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/verifier/base.rb:83:in `rescue in call'
+D, [2016-10-14T16:42:26.909335 #5760] DEBUG -- Kitchen: C:/Users/Nagaraj/AppData/Local/chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/verifier/base.rb:86:in `call'
+D, [2016-10-14T16:42:26.909835 #5760] DEBUG -- Kitchen: C:/Users/Nagaraj/AppData/Local/chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:430:in `block in verify_action'
+D, [2016-10-14T16:42:26.910835 #5760] DEBUG -- Kitchen: C:/Users/Nagaraj/AppData/Local/chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:520:in `synchronize_or_call'
+D, [2016-10-14T16:42:26.912335 #5760] DEBUG -- Kitchen: C:/Users/Nagaraj/AppData/Local/chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:485:in `block in action'
+D, [2016-10-14T16:42:26.912835 #5760] DEBUG -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/2.3.0/benchmark.rb:293:in `measure'
+D, [2016-10-14T16:42:26.913335 #5760] DEBUG -- Kitchen: C:/Users/Nagaraj/AppData/Local/chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:484:in `action'
+D, [2016-10-14T16:42:26.914335 #5760] DEBUG -- Kitchen: C:/Users/Nagaraj/AppData/Local/chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:422:in `verify_action'
+D, [2016-10-14T16:42:26.915335 #5760] DEBUG -- Kitchen: C:/Users/Nagaraj/AppData/Local/chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:355:in `block in transition_to'
+D, [2016-10-14T16:42:26.915835 #5760] DEBUG -- Kitchen: C:/Users/Nagaraj/AppData/Local/chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:354:in `each'
+D, [2016-10-14T16:42:26.916836 #5760] DEBUG -- Kitchen: C:/Users/Nagaraj/AppData/Local/chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:354:in `transition_to'
+D, [2016-10-14T16:42:26.917836 #5760] DEBUG -- Kitchen: C:/Users/Nagaraj/AppData/Local/chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:160:in `verify'
+D, [2016-10-14T16:42:26.918336 #5760] DEBUG -- Kitchen: C:/Users/Nagaraj/AppData/Local/chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:189:in `block in test'
+D, [2016-10-14T16:42:26.919336 #5760] DEBUG -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/2.3.0/benchmark.rb:293:in `measure'
+D, [2016-10-14T16:42:26.919836 #5760] DEBUG -- Kitchen: C:/Users/Nagaraj/AppData/Local/chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:185:in `test'
+D, [2016-10-14T16:42:26.920336 #5760] DEBUG -- Kitchen: C:/Users/Nagaraj/AppData/Local/chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/command.rb:201:in `public_send'
+D, [2016-10-14T16:42:26.921336 #5760] DEBUG -- Kitchen: C:/Users/Nagaraj/AppData/Local/chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/command.rb:201:in `run_action_in_thread'
+D, [2016-10-14T16:42:26.921836 #5760] DEBUG -- Kitchen: C:/Users/Nagaraj/AppData/Local/chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/command.rb:173:in `block (2 levels) in run_action'
+D, [2016-10-14T16:42:26.922836 #5760] DEBUG -- Kitchen: ----End Backtrace-----
