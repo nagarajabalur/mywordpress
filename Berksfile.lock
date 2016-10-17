@@ -1,7 +1,7 @@
 DEPENDENCIES
-  database (>= 1.6.0)
-  mysql (>= 6.0.0)
-  mysql2_chef_gem (~> 1.0.1)
+  mywordpress
+    path: .
+    metadata: true
 
 GRAPH
   apt (5.0.0)
@@ -28,6 +28,10 @@ GRAPH
     build-essential (>= 0.0.0)
     mariadb (>= 0.0.0)
     mysql (~> 6.0)
+  mywordpress (1.0.0)
+    database (>= 1.6.0)
+    mysql (>= 6.0.0)
+    mysql2_chef_gem (~> 1.0.1)
   openssl (4.4.0)
     chef-sugar (>= 3.1.1)
   postgresql (4.0.6)

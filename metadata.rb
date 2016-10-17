@@ -1,7 +1,7 @@
 name              'mywordpress'
 maintainer        'reancloud'
 maintainer_email  'nagaraj.as@reancloud.com'
-license           'xxxxx'
+license           'all rights are reserved'
 description       'install wordpress'
 version           '1.0.0'
 source_url        'https://github.com/nagarajabalur/mywordpress.git'
