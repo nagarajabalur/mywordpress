@@ -44,7 +44,7 @@ socket = "/var/run/mysql-#{dbname}/mysqld.sock"
 # create a symlink for/var/lib/mysql/mysql.sock from /var/run/mysql-#{dbname}/mysqld.sock
 link '/var/lib/mysql/mysql.sock' do
   to socket
-  not_if 'test -f /var/lib/mysql/mysql.sock'
+  not_if { File.exists?('/var/lib/mysql/mysql.sock') }
 end
 
 # set the mysql server details 
