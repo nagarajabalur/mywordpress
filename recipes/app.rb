@@ -11,8 +11,9 @@
 # download the latest wordpress tar from the wordpress official site
 # place the downloaded file in chef cache
 
-sourceurl = node['wordpress']['url']
+sourceurl = node['mywordpress']['url']
 filepath = Chef::Config[:file_cache_path] + '/latest.tar.gz'
+wp_folder = node ['mywordpress']['wp_folder']
 
 remote_file filepath do
   source sourceurl
@@ -30,18 +31,18 @@ execute 'extract_wordpress_tar' do
 end
 
 # making sure var/www/html location is exist
-directory '/var/www/html' do
+directory "#{wp_folder}" do
   recursive true
 end
 
 # copy the content from chef cache path to var/www/html location 
 execute 'copy the wordpress content' do
-  command "cp -r #{Chef::Config['file_cache_path']}/wordpress/* /var/www/html"
-  not_if { File.exists?("/var/www/html/wordpress/index.php") }
+  command "cp -r #{Chef::Config['file_cache_path']}/wordpress/* #{wp_folder}"
+  not_if { File.exists?("#{wp_folder}/wordpress/index.php") }
 end
 
 # added the mysql db config's to  wp-config.php template
-template '/var/www/html/wp-config.php' do
+template "#{wp_folder}/wp-config.php" do
   source 'wp-config.php.erb'
   owner 'apache'
   group 'apache'

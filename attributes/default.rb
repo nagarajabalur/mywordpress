@@ -11,7 +11,10 @@ default['mywordpress']['db']['root_password'] = "password123"
 default['mywordpress']['db']['password'] = "password123"
 
 #attributes for wordpress version
-default['wordpress']['version'] = 'latest'
+default['mywordpress']['version'] = 'latest'
 
 #attributes for wordpress tar download url link
-default['wordpress']['url'] = "https://wordpress.org/wordpress-#{node['wordpress']['version']}.tar.gz"
+default['mywordpress']['url'] = "https://wordpress.org/wordpress-#{node['wordpress']['version']}.tar.gz"
+
+#attribute for wordpress home directory
+default ['mywordpress']['wp_folder'] = "/var/www/html"
