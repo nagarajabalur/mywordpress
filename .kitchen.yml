@@ -1,4 +1,5 @@
 ---
+#define name of a driver that will be used to create platform instances 
 driver:
   name: vagrant
   customize:
@@ -8,16 +9,19 @@ driver:
   ssh:
     insert_key: false
 
-
+#specifies how the chef-client will be simulated during testing
 provisioner:
   name: chef_zero
   
+#Use to specify the package to be installed
 driver_config:
   require_chef_omnibus: true
 
+#specify the platform details
 platforms:
   - name: centos-6.7
 
+#define the suites and recipes
 suites:
   - name: default
     run_list:

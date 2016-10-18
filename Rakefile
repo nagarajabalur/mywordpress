@@ -1,9 +1,13 @@
+# add dependecy modules
 require 'rake'
 require 'rspec/core/rake_task'
 
+#declare the tasks
 task :spec    => 'spec:all'
 task :default => :spec
 
+
+#define all the tasks in namespace :spec
 namespace :spec do
   targets = []
   Dir.glob('./spec/*').each do |dir|
