@@ -7,7 +7,7 @@
 # This recipe will install wordpress application on the host
 #
 
-# download the latest wordpress tar from the wordpress official site
+# download the latest WordPress tar from the WordPress official site
 # place the downloaded file in chef cache
 
 sourceurl = node['mywordpress']['url']
@@ -21,9 +21,9 @@ remote_file filepath do
   mode '0755'
 end
 
-# extract the downloaded wordpress tar file to same to same location
+# extract the downloaded WordPress tar file to same to same location
 # so extracted content will be in Chef::Config[:file_cache_path]/wordpress/* path
-execute 'extract_wordpress_tar' do
+execute 'extract_WordPress_tar' do
   command 'tar xzvf latest.tar.gz'
   cwd Chef::Config[:file_cache_path]
   not_if { File.exist?("#{Chef::Config['file_cache_path']}/wordpress/index.php") }
@@ -38,7 +38,7 @@ directory wp_folder do
 end
 
 # copy the content from chef cache path to var/www/html location
-execute 'copy the wordpress content' do
+execute 'copy the WordPress content' do
   command "cp -r #{Chef::Config['file_cache_path']}/wordpress/* #{wp_folder}"
   not_if { File.exist?("#{wp_folder}/wordpress/index.php") }
 end
@@ -51,7 +51,7 @@ template "#{wp_folder}/wp-config.php" do
   mode '0644'
 end
 
-# installing php-gd package to make wordpress to work
+# installing php-gd package to make WordPress to work
 package 'php-gd' do
   retries 3
   retry_delay 5

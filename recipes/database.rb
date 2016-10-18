@@ -4,7 +4,7 @@
 #
 # author: Nagaraj Abalur
 #
-# This recipe will install mysql  database and create the db user which is required for wordpress application
+# This recipe will install MYSQL  database and create the db user which is required for wordpress application
 #
 
 # defining the local varibale dbname and assign the value of attribute default['mywordpress']['db']['name']
@@ -19,26 +19,32 @@ db_initial_passwd = node['mywordpress']['db']['root_password']
 # defining the local varibale dbname and assign the value of attribute default['mywordpress']['db']['password']
 db_passwd = node['mywordpress']['db']['password']
 
+# defining the local varibale dbname and assign the value of attribute default['mywordpress']['db']['port']
+db_port = node['mywordpress']['db']['port']
+
+# defining the local varibale dbname and assign the value of attribute default['mywordpress']['db']['version']
+db_version = node['mywordpress']['db']['version']
+
 # create Mysql client
 mysql_client 'default' do
   action :create
 end
 
-# installing the dependency package mysql2_chef_gem which is required for mysql
+# installing the dependency package mysql2_chef_gem which is required for MYSQL
 mysql2_chef_gem 'default' do
   action :install
 end
 
-# Create a mysql database with the name as veriable dbname
+# Create a MYSQL database with the name as veriable dbname
 # initial value will be set as variable value db_inital_passwd
 mysql_service dbname do
-  port '3306'
-  version '5.5'
+  port db_port
+  version db_version
   initial_root_password db_inital_passwd
   action [:create, :start]
 end
 
-#assigning the value for socket
+# assigning the value for socket
 socket = "/var/run/mysql-#{dbname}/mysqld.sock"
 
 # create a symlink for/var/lib/mysql/mysql.sock from /var/run/mysql-#{dbname}/mysqld.sock
@@ -61,7 +67,7 @@ mysql_database dbname do
   action      :create
 end
 
-# set the mysql db user details
+# set the MYSQL db user details
 mysql_database_user dbusrname do
   connection    mysql_connection_info
   password      db_passwd
@@ -70,7 +76,7 @@ mysql_database_user dbusrname do
   action        :create
 end
 
-# set the mysql db user permissions
+# set the MYSQL db user permissions
 mysql_database_user 'wordpressuser' do
   connection    mysql_connection_info
   database_name dbname

@@ -4,7 +4,7 @@
 #
 # author: Nagaraj Abalur
 #
-# This recipe will install php packages which is reqiured for wordpress application
+# This recipe will install httpd packages which is reqiured for wordpress application
 #
 
 # installing the httpd yum package on the server
