@@ -5,8 +5,7 @@
 # author: Nagaraj Abalur
 #
 # This recipe will install wordpress application on the host
-# 
-
+#
 
 # download the latest wordpress tar from the wordpress official site
 # place the downloaded file in chef cache
@@ -27,18 +26,21 @@ end
 execute 'extract_wordpress_tar' do
   command 'tar xzvf latest.tar.gz'
   cwd Chef::Config[:file_cache_path]
-  not_if { File.exists?("#{Chef::Config['file_cache_path']}/wordpress/index.php") }
+  not_if { File.exist?("#{Chef::Config['file_cache_path']}/wordpress/index.php") }
 end
 
 # making sure var/www/html location is exist
-directory "#{wp_folder}" do
+directory wp_folder do
+  owner 'apache'
+  group 'apache'
+  mode '0755'
   recursive true
 end
 
-# copy the content from chef cache path to var/www/html location 
+# copy the content from chef cache path to var/www/html location
 execute 'copy the wordpress content' do
   command "cp -r #{Chef::Config['file_cache_path']}/wordpress/* #{wp_folder}"
-  not_if { File.exists?("#{wp_folder}/wordpress/index.php") }
+  not_if { File.exist?("#{wp_folder}/wordpress/index.php") }
 end
 
 # added the mysql db config's to  wp-config.php template

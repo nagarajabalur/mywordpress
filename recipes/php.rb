@@ -5,7 +5,7 @@
 # author: Nagaraj Abalur
 #
 # This recipe will install php packages which are required for wordpress application
-# 
+#
 
 # installing php package on the server
 package 'php' do

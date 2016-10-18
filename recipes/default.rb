@@ -5,7 +5,7 @@
 # author: Nagaraj Abalur
 #
 # This recipe will call the recipes to install apache, mysql, php and wordpress
-# 
+#
 
 # recipe to install apache
 include_recipe 'mywordpress::apache'

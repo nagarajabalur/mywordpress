@@ -1,4 +1,4 @@
-#define serverspec default settings
+# define serverspec default settings
 require 'highline/import'
 
 if ENV['ASK_LOGIN_PASSWORD']
