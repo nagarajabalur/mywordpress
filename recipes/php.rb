@@ -9,8 +9,6 @@
 
 # installing php package on the server
 package 'php' do
-  retries 3
-  retry_delay 5
   action :install
 end
 

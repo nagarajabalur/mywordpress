@@ -14,7 +14,7 @@ dbname = node['mywordpress']['db']['name']
 dbusrname = node['mywordpress']['db']['user']
 
 # defining the local varibale dbname and assign the value of attribute default['mywordpress']['db']['root_password']
-db_inital_passwd = node['mywordpress']['db']['root_password']
+db_initial_passwd = node['mywordpress']['db']['root_password']
 
 # defining the local varibale dbname and assign the value of attribute default['mywordpress']['db']['password']
 db_passwd = node['mywordpress']['db']['password']
@@ -38,6 +38,7 @@ mysql_service dbname do
   action [:create, :start]
 end
 
+#assigning the value for socket
 socket = "/var/run/mysql-#{dbname}/mysqld.sock"
 
 # create a symlink for/var/lib/mysql/mysql.sock from /var/run/mysql-#{dbname}/mysqld.sock
@@ -46,12 +47,12 @@ link '/var/lib/mysql/mysql.sock' do
   not_if { File.exist?('/var/lib/mysql/mysql.sock') }
 end
 
-# set the mysql server details
+# set the M server details
 mysql_connection_info = {
   host: 'localhost',
   username: 'root',
   socket: socket,
-  password: db_inital_passwd
+  password: db_initial_passwd
 }
 
 # create the database infomation

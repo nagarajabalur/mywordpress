@@ -1,6 +1,6 @@
 Description
 ===========
-This cookbook does not set up the WordPress blog. You will need to do this manually by going to http://hostname/wp-admin/install.php 
+This cookbbok install Apache, PHP, MYSQL and WordPress.Please install the wordpress manually by going to http://hostname/wp-admin/install.php 
 
 Requirements
 ============
