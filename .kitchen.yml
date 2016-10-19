@@ -1,5 +1,6 @@
 ---
-#define name of a driver that will be used to create platform instances 
+#define name of a driver that will be used to create platform instances
+# 
 driver:
   name: vagrant
   customize:
